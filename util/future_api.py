@@ -8,7 +8,7 @@ import hashlib
 import hmac
 import requests
 import json
-import exceptions
+import util.exceptions
 
 host = "https://fx-api-testnet.gateio.ws"
 def gen_sign(method, url, query_string=None, payload_string=None):
@@ -110,7 +110,7 @@ def get_position(symbol='ETH_USDT'):
 
     url = '/futures/usdt/positions/'+symbol
     query_param = ''
-    # `gen_sign` 的实现参考认证一章
+    # `gen_sign` 的实现参考认证一章22
     sign_headers = gen_sign('GET', prefix + url, query_param)
     headers.update(sign_headers)
     r = requests.request('GET', host + prefix + url, headers=headers)
@@ -135,6 +135,9 @@ def json_operation(data=None):
     #     data = json.load(f)
     print(data['size'])
     return data['size']
+def open_checkfor():
+
+    pass
 #####################################################################
 #####################################################################
 if __name__ == "__main__":

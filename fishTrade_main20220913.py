@@ -44,7 +44,7 @@ from util.future_api import *
 #import ma_ind as maInd
 import sys
 import marketHelper1005 as marketHelper
-# import accountConfig as accCfg
+import util.accountConfig as accCfg
 #import sql_class1225 as sql
 import traceback
 import time
@@ -569,12 +569,12 @@ if __name__ == "__main__":
 #            print(str(r))
 #            sql.ins_order(r)
             list_value=accCfg.sym_list_value[1]
-    #        print(list_value)
+            print(list_value)
     #    gridtradesys = ClassET('eos','eth',0.021877,0.015780,0.10)
             gridtradesys = ClassET(list_value[0],list_value[1],float(list_value[2]),float(list_value[3]),float(list_value[4]),float(list_value[5]))
             if len(accCfg.sym_list_value)>2:
                 list_value=accCfg.sym_list_value[2]
-        #        print(list_value)
+                print(list_value)
                 gridtradesys1 = ClassET(list_value[0],list_value[1],float(list_value[2]),float(list_value[3]),float(list_value[4]),float(list_value[5]))
 
             while True:

@@ -33,18 +33,19 @@ def read_api_File(file="api.ini"):
 # =============================================================================
 #
 # =============================================================================
-def read_Ini_File():
+def read_Ini_File(file="init.ini"):
     # 打开文件
-    fo = open("init.ini", "r",-1,'utf-8')
+    fo = open(file, "r",-1,'utf-8')
 #    print ("文件名为: ", fo.name)
     list_symbol = []
     list_value = []
     for line in fo.readlines():                          #依次读取每行
+        print(line)
         line = line.strip()                             #去掉每行头尾空白
         line = line.replace(' ','')                     #去掉行内空白
-#        print ("读取的数据为: %s" % (line))
+        # print ("读取的数据为: %s" % (line))
         tempList=line
-        print(tempList)
+        # print(tempList)
         list_symbol.append(tempList)
 #        list_value.append(tempList[1])
     # 关闭文件
@@ -103,9 +104,9 @@ def verify_usedRight():
 # =============================================================================
 if __name__ == "__main__":
 
-    huobi = mh.Market()
-    r=huobi.get_accountInfo()
-    print(r)
+    # huobi = mh.Market()
+    # r=huobi.get_accountInfo()
+    # print(r)
 ##    r='mk0lklo0de-ac113e7d-ae07f4f9-4591b'
 
 #    list=get_account_reports('History16.csv')
@@ -145,3 +146,4 @@ if __name__ == "__main__":
 #    listdir('log',list1)
 #    list1=file_name('log')
 #    print(list1)
+    read_Ini_File()

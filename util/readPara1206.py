@@ -44,10 +44,10 @@ def read_Ini_File(file="init.ini"):
         line = line.strip()                             #去掉每行头尾空白
         line = line.replace(' ','')                     #去掉行内空白
         # print ("读取的数据为: %s" % (line))
-        tempList=line
-        # print(tempList)
-        list_symbol.append(tempList)
-#        list_value.append(tempList[1])
+        list=line.split(',')
+        print(list)
+        list_symbol.append(list)
+
     # 关闭文件
     fo.close()
     print(list_symbol)

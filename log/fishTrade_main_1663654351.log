@@ -1,0 +1,98 @@
+2022-09-20 14:12:33,117 - fishTrade_main20220913.py[line:555] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-20 14:12:33,118 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-20 14:12:37,932 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:37,933 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:40,298 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:40,299 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:43,471 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:43,471 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:47,839 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:47,839 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:49,635 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:49,636 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:51,738 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:51,739 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:53,571 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:53,572 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:55,397 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:55,397 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:57,103 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:57,104 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:12:58,633 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:12:58,634 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:13:00,192 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:13:00,193 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:13:01,682 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:13:01,683 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:13:03,272 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:13:03,273 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:13:04,800 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:13:04,801 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 14:13:06,891 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+TypeError: 'NoneType' object is not subscriptable
+
+2022-09-20 14:13:06,892 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')

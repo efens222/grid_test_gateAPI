@@ -1,0 +1,49 @@
+2022-09-18 23:41:10,459 - fishTrade_main20220913.py[line:554] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-18 23:41:10,459 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=usdt_eth highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-18 23:41:10,772 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:12,777 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:13,019 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:15,031 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:16,040 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:18,053 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:18,326 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:20,334 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:20,712 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:22,717 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:23,142 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+
+2022-09-18 23:41:25,155 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-18 23:41:25,446 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.base_cur, self.quote_cur)
+AttributeError: 'Market' object has no attribute 'market_detail'
+

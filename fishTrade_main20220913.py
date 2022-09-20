@@ -82,7 +82,7 @@ class ClassET:
         当LTC对BTC的价格上涨时，同等单位的LTC能够兑换的BTC是增加的，而同等单位的BTC能够兑换的LTC是减少的。
     """
 
-    def __init__(self, base_cur="USDT", quote_cur="ETH",  highPrice=0, lowPrice=0,step_num=10,first_lots=1):
+    def __init__(self,  quote_cur="ETH",base_cur="USDT",  highPrice=0, lowPrice=0,step_num=10,first_lots=1):
         """
         初始化
         :param base_cur:  基准资产
@@ -138,7 +138,7 @@ class ClassET:
         self.logstr1="str1"
         self.logstr2="str2"
         strPara ="初始参数设置:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(\
-                                        self.base_cur, self.quote_cur, self.highPrice, self.lowPrice,  self.step_num)
+                                        self.quote_cur,self.base_cur, self.highPrice, self.lowPrice,  self.step_num)
         logger.info(strPara)
         print(strPara)
 # =============================================================================
@@ -149,7 +149,7 @@ class ClassET:
         try:
             if self.highPrice<=0 or self.lowPrice<=0  or self.step_num<=1:
                 strPara ="初始参数设置错误:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(\
-                                        self.base_cur, self.quote_cur, self.highPrice, self.lowPrice,  self.step_num)
+                                        self.quote_cur,self.base_cur, self.highPrice, self.lowPrice,  self.step_num)
                 logger.error(strPara)
                 print(strPara)
                 return -1
@@ -159,35 +159,40 @@ class ClassET:
                 print('API账户连接失败，请确认配置API访问键值对正确？')
                 return -1
             self.market_price_tick = dict()
-            self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)] = \
-                huobi_market.market_detail(self.base_cur, self.quote_cur)
-#            print(self.market_price_tick)
-#            print(huobi_market.market_detail(self.base_cur, self.quote_cur))
+            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)] = \
+                huobi_market.market_detail(self.quote_cur,self.base_cur)
+            print(self.market_price_tick)
+            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
             market_price_sell_1 = \
-                self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("asks")[0][0]
+                self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
             market_price_buy_1 = \
-                self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("bids")[0][0]
+                self.market_price_tick["{}_{}".format( self.quote_cur,self.base_cur)].get("bids")[0]['p']
 #            self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)] = \
 #                huobi_market.market_detail(self.base_cur, self.mid_cur)
             print('ask1=',market_price_sell_1)
             print('bid1=',market_price_buy_1)
 #            print(self.market_price_tick)
-#            print(huobi_market.market_detail(self.base_cur, self.quote_cur))
-            symbol = self.get_market_name(self.base_cur,self.quote_cur)
-            closePrice=float(huobi_market.get_market_close(symbol))
+#            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
+            symbol = self.get_market_name(self.quote_cur,self.base_cur)
+            print(symbol)
+            closePrice=float(huobi_market.get_market_close(symbol.upper()))
             print('closePrice=',closePrice)
             if(closePrice==0):
                 return -1
-            sym_info=huobi_market.get_symbols(symbol)
+            # sym_info=huobi_market.get_symbols(symbol)
 #            self.print_log('sym_info'+str(sym_info))
-            digits=sym_info.get('amount-precision')
-            self.min_trade_unit=sym_info.get('min-order-amt')
-            print('digits=',digits)
+#             digits=sym_info.get('amount-precision')
+#             self.min_trade_unit=sym_info.get('min-order-amt')
+#             print('digits=
+            if symbol.upper() == 'ETH_USDT': digits = 100
+            if symbol.upper() == 'BTC_USDT': digits = 10
+
             buylots_avl=self.get_currency_available(huobi_market,self.quote_cur)/closePrice
-            buylots_avl=downRound(buylots_avl,digits)
+            # buylots_avl=round(buylots_avl,digits)
+            buylots_avl=math.floor(buylots_avl*digits)/digits
 #            matradesys.buy_enter(huobi_market,buylots)
-            selllots_avl=self.get_currency_available(huobi_market,self.base_cur)
-            selllots_avl = downRound(selllots_avl, digits)
+#             selllots_avl=self.get_currency_available(huobi_market,self.base_cur)
+            selllots_avl =buylots_avl# math.floor(selllots_avl * digits)/digits
 #            return
 
 
@@ -293,27 +298,27 @@ class ClassET:
 #               self.base_quote_fee + self.base_mid_fee + self.quote_mid_fee
 
 #    @staticmethod
-    def get_market_name(self,base, quote):
-            return "{0}{1}".format(base, quote)
+    def get_market_name(self, quote,base):
+            return "{0}_{1}".format(quote,base)
 
     # 计算最保险的下单数量
     '''
 
     '''
     def get_market_buy_size(self, huobi_market):
-        market_buy_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("asks")[0][1] \
+        market_buy_size = self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][1] \
                           * self.order_ratio_base_quote
         base_mid_sell_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)].get("bids")[0][1] \
                              * self.order_ratio_base_mid
         base_quote_off_reserve_buy_size = \
-            (huobi_market.account_available(self.quote_cur, self.get_market_name(self.base_cur, self.quote_cur))
+            (huobi_market.account_available(self.quote_cur, self.get_market_name(self.quote_cur,self.base_cur))
              - self.base_quote_quote_reserve) / \
-            self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("asks")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
         quote_mid_off_reserve_buy_size = \
             (huobi_market.account_available(self.mid_cur, self.get_market_name(self.quote_cur, self.mid_cur)) -
              self.quote_mid_mid_reserve) / \
             self.market_price_tick["{0}_{1}".format(self.quote_cur, self.mid_cur)].get("asks")[0][0] / \
-            self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("asks")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
         base_mid_off_reserve_sell_size = \
             huobi_market.account_available(self.base_cur, self.get_market_name(self.base_cur, self.mid_cur)) - \
             self.base_mid_base_reserve
@@ -327,17 +332,17 @@ class ClassET:
 
     '''
     def get_market_sell_size(self, huobi_market):
-        market_sell_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("bids")[0][1] \
+        market_sell_size = self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("bids")[0][1] \
                            * self.order_ratio_base_quote
         base_mid_buy_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)].get("asks")[0][1] \
                             * self.order_ratio_base_mid
         base_quote_off_reserve_sell_size = \
-            huobi_market.account_available(self.base_cur, self.get_market_name(self.base_cur, self.quote_cur)) \
+            huobi_market.account_available(self.base_cur, self.get_market_name(self.quote_cur,self.base_cur)) \
             - self.base_quote_base_reserve
         quote_mid_off_reserve_sell_size = \
             (huobi_market.account_available(self.quote_cur, self.get_market_name(self.quote_cur, self.mid_cur)) -
              self.quote_mid_quote_reserve) / \
-            self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("bids")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("bids")[0][0]
         base_mid_off_reserve_buy_size = \
             (huobi_market.account_available(self.mid_cur, self.get_market_name(self.base_cur, self.mid_cur)) -
              self.base_mid_mid_reserve) / \
@@ -353,10 +358,10 @@ class ClassET:
     def buy_enter(self, huobi_market, market_buy_size):
         logger.info("多单开仓 size:{0}".format(market_buy_size))
         # return
-        order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.base_cur, self.quote_cur),price=self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].get("asks")[0][0], amount=market_buy_size)
+        order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
         logger.info("买入结果：{0}".format(order_result))
         time.sleep(2)
-        if not huobi_market.order_normal(order_result,cur_market_name=self.get_market_name(self.base_cur, self.quote_cur)):
+        if not huobi_market.order_normal(order_result,cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)):
             # 交易失败
             logger.info("buy交易失败，退出 {0}".format(order_result))
             return 0
@@ -366,10 +371,10 @@ class ClassET:
             if retry == 2:
                 # 取消剩余未成交的
 #                self.pos_count_buy-=1
-                huobi_market.cancel_order(order_result, self.get_market_name(self.base_cur, self.quote_cur))
-                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.base_cur, self.quote_cur))
+                huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur,self.base_cur))
+                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur,self.base_cur))
             field_amount = float(huobi_market.get_order_processed_amount(
-                order_result, cur_market_name=self.get_market_name(self.base_cur, self.quote_cur)))
+                order_result, cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)))
             logger.info("field_amount:{0}_{1}".format(field_amount,already_close_amount))
             retry += 1
             time.sleep(2)
@@ -389,11 +394,11 @@ class ClassET:
     def sell_enter(self, huobi_market, market_sell_size):
         logger.info("空单开仓")
         # return
-        order_result = huobi_market.sell(cur_market_name=self.get_market_name(self.base_cur, self.quote_cur),
-                                         price=self.market_price_tick["{0}_{1}".format(self.base_cur, self.quote_cur)].
+        order_result = huobi_market.sell(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),
+                                         price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].
                                          get("bids")[0][0], amount=market_sell_size)
         if not huobi_market.order_normal(order_result,
-                                         cur_market_name=self.get_market_name(self.base_cur, self.quote_cur)):
+                                         cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)):
             # 交易失败
             logger.info("sell交易失败，退出 {0}".format(order_result))
             return 0
@@ -404,12 +409,12 @@ class ClassET:
             if retry == 2:
                 # 取消剩余未成交的
 #                self.pos_count_buy+=1
-                huobi_market.cancel_order(order_result, self.get_market_name(self.base_cur, self.quote_cur))
+                huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur,self.base_cur))
 
-                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.base_cur, self.quote_cur))
+                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur,self.base_cur))
 
             field_amount = float(huobi_market.get_order_processed_amount(
-                    order_result, cur_market_name=self.get_market_name(self.base_cur, self.quote_cur)))
+                    order_result, cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)))
             logger.info("field_amount:{0}_{1}".format(field_amount, already_close_amount))
             retry += 1
             time.sleep(2)
@@ -526,11 +531,11 @@ class ClassET:
                 not in [2, 3, 6, "partial-canceled", "filled", "canceled"]:    # 订单完成或者取消或者部分取消
             time.sleep(0.1)
 # =============================================================================
-#   getLots
+#   getAmount
 # =============================================================================
     def get_currency_available(self,market,curPara):
-        cur_lots=market.account_available(curPara)
-        return cur_lots
+        cur_availalbe=market.account_available(curPara)
+        return cur_availalbe
 # =============================================================================
 # outPut Log
 # =============================================================================
@@ -577,11 +582,12 @@ if __name__ == "__main__":
                 print(list_value)
                 gridtradesys1 = ClassET(list_value[0],list_value[1],float(list_value[2]),float(list_value[3]),float(list_value[4]),float(list_value[5]))
 
+
             while True:
 
                 print(strout)
     #            logging.info(strout)
-                timeLenth=accCfg.use_right
+                timeLenth=10#accCfg.check_authCode
 
                 if timeLenth<=0:
                     print("软件使用已到期，感谢您的使用，若继续使用请联系作者")
@@ -591,11 +597,11 @@ if __name__ == "__main__":
                 if i.minute % 5==0 :
                     if write_flag==0:
                         write_flag=1
-#                        ab=huobi_market.get_assets(account_id)
-#                       # print(ab)
-#                        sql.ins_assets(huobi_market,ab,account_id)
-                else:
-                    write_flag=0
+                        # ab=huobi_market.get_assets(account_id)
+                        # print(ab)
+                      #  sql.ins_assets(huobi_market,ab,account_id)
+                # else:
+                #     write_flag=0
 
                 res=gridtradesys.strategy()
                 time.sleep(gridtradesys.interval)
@@ -610,4 +616,3 @@ if __name__ == "__main__":
                     print("")
                     res=gridtradesys1.strategy()
                     time.sleep(gridtradesys.interval)
-

@@ -1,0 +1,127 @@
+2022-09-19 00:47:32,036 - fishTrade_main20220913.py[line:555] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-19 00:47:32,037 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=usdt_eth highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-19 00:47:33,419 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:35,888 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:37,330 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:38,655 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:39,866 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:41,371 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:42,565 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:43,925 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:45,212 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:46,819 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:48,431 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:50,867 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:53,851 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:54,993 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:56,128 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:47:57,776 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:00,233 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:01,395 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:02,690 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:05,485 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:06,695 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:07,930 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:09,061 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:10,433 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:13,177 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:14,340 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:16,574 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:18,095 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:19,520 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:20,735 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:22,626 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:26,178 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:27,341 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:28,431 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:29,704 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:31,254 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:33,122 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:34,532 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:36,107 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:37,453 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:38,853 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:40,068 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:41,178 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:43,357 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:44,559 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:45,778 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:47,463 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:48,641 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:51,147 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:52,672 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:54,277 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:56,725 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:48:58,056 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:00,304 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:01,982 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:03,793 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:05,051 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:06,494 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:07,540 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:11,282 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:12,827 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:13,952 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:17,011 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:18,567 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:20,001 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:21,753 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:24,655 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:26,008 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:27,542 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:28,934 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:31,120 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:32,715 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:35,216 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:36,555 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:37,729 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:39,413 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:40,691 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:42,215 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:44,934 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:46,753 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:48,723 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:49,945 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:51,591 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:51,992 - fishTrade_main20220913.py[line:289] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 157, in strategy
+    huobi_market = marketHelper.Market()
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 39, in __init__
+    r = requests.request('GET', acfg.gateApi + prefix + url, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Python\lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "D:\Python\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Python\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Python\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Python\lib\ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+
+2022-09-19 00:49:51,994 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:49:53,465 - fishTrade_main20220913.py[line:607] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')

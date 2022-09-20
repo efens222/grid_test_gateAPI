@@ -1,0 +1,384 @@
+2022-09-19 00:26:32,249 - fishTrade_main20220913.py[line:554] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-19 00:26:32,249 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=usdt_eth highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-19 00:26:33,317 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:33,318 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:34,922 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:34,922 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:35,925 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:35,925 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:37,383 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:37,383 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:38,275 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:38,275 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:39,666 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:39,666 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:41,124 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:41,125 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:41,943 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:41,944 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:42,835 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:42,835 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:43,836 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:43,836 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:44,857 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:44,857 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:45,317 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 163, in strategy
+    huobi_market.market_detail(self.quote_cur,self.base_cur)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 386, in market_detail
+    r = requests.request('GET', acfg.gateApi + prefix + url + "?" + query_param, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\Python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+
+2022-09-19 00:26:45,318 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:46,620 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:46,620 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:48,571 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:48,571 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:49,471 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:49,471 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:50,656 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:50,656 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:52,152 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:52,152 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:54,823 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:54,823 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:56,297 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:56,297 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:57,783 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:57,783 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:26:58,803 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:26:58,804 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:00,253 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:00,253 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:02,109 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:02,110 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:03,361 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:03,361 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:04,194 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:04,194 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:05,250 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:05,250 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:06,051 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:06,051 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:07,526 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:07,526 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:08,548 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:08,548 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:09,313 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:09,313 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:10,916 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:10,916 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:12,732 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:12,732 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:14,211 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:14,211 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:15,389 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:15,389 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:16,660 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:16,660 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:18,151 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:18,151 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:20,225 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:20,226 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:22,583 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:22,583 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:24,453 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:24,453 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:25,278 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:25,278 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:26,350 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:26,350 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:28,809 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:28,809 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:30,160 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:30,160 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:31,542 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:31,542 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:33,558 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:33,558 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:34,760 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:34,760 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:35,582 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:35,583 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:36,581 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:36,582 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:37,703 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:37,704 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:39,640 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:39,640 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:40,645 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:40,645 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:41,546 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:41,546 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:43,111 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:43,111 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:44,273 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:44,273 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:45,996 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:45,996 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:47,039 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:47,039 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:50,125 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:50,126 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:51,839 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:51,840 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-19 00:27:53,893 - fishTrade_main20220913.py[line:288] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 167, in strategy
+    self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+KeyError: 0
+
+2022-09-19 00:27:53,893 - fishTrade_main20220913.py[line:606] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')

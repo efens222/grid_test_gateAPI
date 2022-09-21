@@ -1,0 +1,415 @@
+2022-09-20 18:56:22,466 - fishTrade_main20220913.py[line:560] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-20 18:56:22,467 - fishTrade_main20220913.py[line:143] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-20 18:56:28,391 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:30,392 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:32,908 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:34,910 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:37,260 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:39,263 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:41,784 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:43,785 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:46,439 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:48,440 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:50,952 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:52,953 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:55,460 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:56:57,461 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:56:59,948 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:01,949 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:05,664 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:07,665 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:10,166 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:12,166 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:14,635 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:16,694 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:19,552 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:21,553 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:24,172 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:26,173 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:29,518 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:31,519 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:34,458 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:36,458 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:39,238 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:41,239 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:43,582 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:45,583 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:48,014 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:50,015 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:52,573 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:54,574 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:57:57,217 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:57:59,218 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:02,038 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:04,039 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:06,677 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:08,678 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:11,099 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:13,100 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:18,756 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:20,757 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:23,305 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:25,317 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:28,027 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:30,028 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:35,500 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:37,500 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:39,998 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:41,999 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:44,974 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:46,976 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:49,432 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:51,433 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:54,392 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:58:56,392 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:58:59,000 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:01,000 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:03,785 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:05,785 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:08,288 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:10,289 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:12,843 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:14,844 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:17,438 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:19,439 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:22,285 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:24,286 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:26,670 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:28,672 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:31,092 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:33,093 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:36,019 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:38,020 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:40,849 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:42,850 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:45,291 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:47,291 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:50,243 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:52,244 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:54,772 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 18:59:56,773 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 18:59:59,515 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:01,518 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:04,193 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:06,194 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:09,173 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:11,174 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:13,693 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:15,730 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:18,096 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:20,097 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:22,697 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+
+2022-09-20 19:00:24,698 - fishTrade_main20220913.py[line:613] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-20 19:00:25,753 - fishTrade_main20220913.py[line:294] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 201, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\test_gateAPI\marketHelper1005.py", line 226, in get_last_order_price
+    d2 = uh.get_today()
+NameError: name 'uh' is not defined
+

@@ -1,0 +1,245 @@
+2022-09-24 11:11:14,366 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-24 11:11:14,366 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-24 11:11:16,328 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:18,344 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:19,881 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:21,886 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:23,388 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:25,397 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:27,597 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:29,607 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:31,496 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:33,501 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:35,370 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:37,383 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:39,206 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:41,211 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:42,863 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:44,866 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:46,713 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:48,718 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:50,492 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:52,496 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:54,016 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:56,028 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:11:57,821 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:11:59,824 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:12:01,882 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:12:03,889 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:12:05,559 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:12:07,566 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:12:09,228 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:12:11,239 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:12:13,404 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+
+2022-09-24 11:12:15,412 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:12:16,966 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('../log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../log/data.json'
+

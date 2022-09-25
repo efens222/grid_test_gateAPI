@@ -14,7 +14,7 @@ import sys
 # import marketHelper1005 as mh
 #         read apikey
 
-def read_api_File(file="api.ini"):
+def read_api_File(file="../util/api.ini"):
     fo = open(file, "r",-1,'utf-8')
     list_key = []
     list_value = []
@@ -33,7 +33,7 @@ def read_api_File(file="api.ini"):
 # =============================================================================
 #
 # =============================================================================
-def read_Ini_File(file="init.ini"):
+def read_Ini_File(file="../util/init.ini"):
     # 打开文件
     fo = open(file, "r",-1,'utf-8')
 #    print ("文件名为: ", fo.name)

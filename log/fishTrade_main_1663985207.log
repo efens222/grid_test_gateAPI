@@ -1,0 +1,423 @@
+2022-09-24 10:06:48,117 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-24 10:06:48,117 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-24 10:06:49,887 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:06:51,902 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:06:53,678 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:06:55,683 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:06:57,367 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:06:59,370 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:01,205 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:03,214 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:05,181 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:07,190 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:09,101 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 235, in get_closed_posHistories
+    r = requests.request('GET', host + prefix + url, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Python\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Python\lib\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "D:\Python\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+2022-09-24 10:07:11,116 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:12,770 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:14,775 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:16,722 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:18,729 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:20,550 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:22,557 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:24,415 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:26,418 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:28,160 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:30,175 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:31,870 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:33,883 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:35,855 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:37,862 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:39,440 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:41,452 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:43,477 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:45,491 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:47,217 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:49,220 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:51,442 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:53,445 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:55,157 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:07:57,167 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:07:59,013 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:01,026 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:02,844 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:04,850 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:06,606 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:08,615 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:10,326 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:12,328 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:14,319 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:16,322 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:18,374 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:20,379 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:22,149 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:24,151 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:26,328 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:28,334 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:30,065 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:32,067 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:33,889 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:35,894 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:37,810 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:39,813 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:41,702 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:43,714 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:45,535 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:47,546 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:49,389 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:51,403 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:53,512 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:55,525 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:08:57,488 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:08:59,498 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:01,277 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:03,285 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:05,119 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:07,130 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:08,941 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:10,949 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:12,775 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:14,784 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:16,421 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:18,428 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:20,274 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:22,278 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:23,914 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:25,928 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:27,880 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:29,886 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:31,712 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:33,714 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:35,699 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:37,708 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:39,403 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:41,408 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:43,213 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:45,213 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:47,053 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:49,067 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:50,680 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:52,681 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:54,305 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:09:56,316 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:09:58,076 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:00,091 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:01,857 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:03,860 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:05,758 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:07,764 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:09,620 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:11,628 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:13,715 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:15,723 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:17,589 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:19,589 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:21,291 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:23,291 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:25,558 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:27,564 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:29,579 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:31,590 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:33,322 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:35,335 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:37,301 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:39,308 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:41,207 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:43,218 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:45,076 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:47,081 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:48,757 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:10:50,772 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:10:52,357 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+

@@ -1,0 +1,25 @@
+2022-09-24 10:50:42,970 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-24 10:50:42,970 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-24 10:50:44,896 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:50:46,911 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:50:49,193 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+
+2022-09-24 10:50:51,194 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:50:53,022 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+TypeError: cannot unpack non-iterable NoneType object
+

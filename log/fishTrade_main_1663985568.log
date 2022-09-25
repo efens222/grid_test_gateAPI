@@ -1,0 +1,55 @@
+2022-09-24 10:12:49,181 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-24 10:12:49,181 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-24 10:12:50,460 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 234, in get_closed_posHistories
+    query_param = 'contract=' + symbol + '&limit=' + num
+TypeError: can only concatenate str (not "int") to str
+
+2022-09-24 10:12:52,470 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:12:53,912 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 234, in get_closed_posHistories
+    query_param = 'contract=' + symbol + '&limit=' + num
+TypeError: can only concatenate str (not "int") to str
+
+2022-09-24 10:12:55,919 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:12:57,470 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 234, in get_closed_posHistories
+    query_param = 'contract=' + symbol + '&limit=' + num
+TypeError: can only concatenate str (not "int") to str
+
+2022-09-24 10:12:59,475 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 10:13:00,942 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 234, in get_closed_posHistories
+    query_param = 'contract=' + symbol + '&limit=' + num
+TypeError: can only concatenate str (not "int") to str
+

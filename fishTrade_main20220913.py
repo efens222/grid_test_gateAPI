@@ -41,18 +41,20 @@ v2.0
 1.修改成GATE版本
 '''
 from util.future_api import *
-#import ma_ind as maInd
+# import ma_ind as maInd
 import sys
 import marketHelper1005 as marketHelper
 import util.accountConfig as accCfg
-#import sql_class1225 as sql
+# import sql_class1225 as sql
 import traceback
 import time
 import logging
-#import multiprocessing
+# import multiprocessing
 import math
 
 import datetime
+import util.pub_fun as pf
+
 # import ma_ind as maInd
 # 设置logging
 
@@ -63,14 +65,17 @@ import datetime
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-#now_dir = os.getcwd()
-main_log_handler = logging.FileHandler("log/fishTrade_main_{0}.log".format(int(time.time())), mode="w", encoding="utf-8")
+# now_dir = os.getcwd()
+main_log_handler = logging.FileHandler("log/fishTrade_main_{0}.log".format(int(time.time())), mode="w",
+                                       encoding="utf-8")
 main_log_handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
 main_log_handler.setFormatter(formatter)
 logger.addHandler(main_log_handler)
-account_id=0
-write_flag=0
+account_id = 0
+write_flag = 0
+
+
 class ClassET:
     """
         交易对：用一种资产（quote currency）去定价另一种资产（base currency）,比如用比特币（BTC）去定价莱特币（LTC），
@@ -82,7 +87,7 @@ class ClassET:
         当LTC对BTC的价格上涨时，同等单位的LTC能够兑换的BTC是增加的，而同等单位的BTC能够兑换的LTC是减少的。
     """
 
-    def __init__(self,  quote_cur="ETH",base_cur="USDT",  highPrice=0, lowPrice=0,step_num=10,first_lots=1):
+    def __init__(self, quote_cur="ETH", base_cur="USDT", highPrice=0, lowPrice=0, step_num=10, first_lots=1):
         """
         初始化
         :param base_cur:  基准资产
@@ -96,32 +101,32 @@ class ClassET:
         # 设定EA监控交易对
         self.base_cur = base_cur
         self.quote_cur = quote_cur
-#        self.mid_cur = mid_cur   # 中间货币，usdt或者btc
-#
-#        self.base_quote_slippage = 0.002  # 设定市场价滑点百分比
-##        self.base_mid_slippage = 0.002
-##        self.quote_mid_slippage = 0.002
-#
-#        self.base_quote_fee = 0.002  # 设定手续费比例
-##        self.base_mid_fee = 0.002
-##        self.quote_mid_fee = 0.002
-#
-#        self.order_ratio_base_quote = 0.5  # 设定吃单比例
-##        self.order_ratio_base_mid = 0.5
+        #        self.mid_cur = mid_cur   # 中间货币，usdt或者btc
+        #
+        #        self.base_quote_slippage = 0.002  # 设定市场价滑点百分比
+        ##        self.base_mid_slippage = 0.002
+        ##        self.quote_mid_slippage = 0.002
+        #
+        #        self.base_quote_fee = 0.002  # 设定手续费比例
+        ##        self.base_mid_fee = 0.002
+        ##        self.quote_mid_fee = 0.002
+        #
+        #        self.order_ratio_base_quote = 0.5  # 设定吃单比例
+        ##        self.order_ratio_base_mid = 0.5
 
         # 设定监控时间
         self.interval = 2
         self.highPrice = highPrice
         self.lowPrice = lowPrice
-#        self.startPrice = startPrice
+        #        self.startPrice = startPrice
         self.step_num = step_num
-        self.medialPrice = (highPrice+lowPrice)/2
-        self.stepGrid = (highPrice-lowPrice)/step_num
-        #XXX
+        self.medialPrice = (highPrice + lowPrice) / 2
+        self.stepGrid = (highPrice - lowPrice) / step_num
+        # XXX
         # 最小的交易单位设定
-        self.min_trade_unit = 0.002   # LTC/BTC交易对，设置为0.2, ETH/BTC交易对，设置为0.02
-        self.pos_rate = {'0.10':0.1 ,'0.25':0.25,'0.38':0.38,'0.50':0.5,'0.62':0.62,'0.75':0.75,'1.00':1}
-        self.pos_rate_list = [0.1,0.25,0.38,0.5,0.62,0.75,1.0]
+        self.min_trade_unit = 0.01  # LTC/BTC交易对，设置为0.2, ETH/BTC交易对，设置为0.02
+        self.pos_rate = {'0.10': 0.1, '0.25': 0.25, '0.38': 0.38, '0.50': 0.5, '0.62': 0.62, '0.75': 0.75, '1.00': 1}
+        self.pos_rate_list = [0.1, 0.25, 0.38, 0.5, 0.62, 0.75, 1.0]
         self.pos_first_lots = first_lots
         self.pos_count_max = 7
         self.pos_count_buy = 0
@@ -131,304 +136,317 @@ class ClassET:
         self.buyCmd = False
         self.sellCmd = False
         self.openBuy = 0
-        self.openSell =0
-        self.closeBuy=0
-        self.closeSell=0
-        self.doAction=0 #1:openBuy,2:openSell,3:closeBuy,4:closeSell
-        self.logstr1="str1"
-        self.logstr2="str2"
-        strPara ="初始参数设置:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(\
-                                        self.quote_cur,self.base_cur, self.highPrice, self.lowPrice,  self.step_num)
+        self.openSell = 0
+        self.closeBuy = 0
+        self.closeSell = 0
+        self.doAction = 0  # 1:openBuy,2:openSell,3:closeBuy,4:closeSell
+        self.logstr1 = "str1"
+        self.logstr2 = "str2"
+        strPara = "初始参数设置:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format( \
+            self.quote_cur, self.base_cur, self.highPrice, self.lowPrice, self.step_num)
         logger.info(strPara)
         print(strPara)
-# =============================================================================
-#
-# =============================================================================
-    def strategy(self):   # 主策略
+
+    # =============================================================================
+    #
+    # =============================================================================
+    def strategy(self):  # 主策略
         # 检查是否有开仓条件
         try:
-            if self.highPrice<=0 or self.lowPrice<=0  or self.step_num<=1:
-                strPara ="初始参数设置错误:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(\
-                                        self.quote_cur,self.base_cur, self.highPrice, self.lowPrice,  self.step_num)
+            if self.highPrice <= 0 or self.lowPrice <= 0 or self.step_num <= 1:
+                strPara = "初始参数设置错误:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format( \
+                    self.quote_cur, self.base_cur, self.highPrice, self.lowPrice, self.step_num)
                 logger.error(strPara)
                 print(strPara)
                 return -1
             # 初始化为火币市场
             huobi_market = marketHelper.Market()
-            if account_id==-1:
+            if account_id == -1:
                 print('API账户连接失败，请确认配置API访问键值对正确？')
                 return -1
             self.market_price_tick = dict()
-            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)] = \
-                huobi_market.market_detail(self.quote_cur,self.base_cur)
+            self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)] = \
+                huobi_market.market_detail(self.quote_cur, self.base_cur)
             print(self.market_price_tick)
-            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
+            print(huobi_market.market_detail(self.quote_cur, self.base_cur))
             market_price_sell_1 = \
-                self.market_price_tick["{}_{}".format(self.quote_cur,self.base_cur)].get("asks")[0]['p']
+                self.market_price_tick["{}_{}".format(self.quote_cur, self.base_cur)].get("asks")[0]['p']
             market_price_buy_1 = \
-                self.market_price_tick["{}_{}".format( self.quote_cur,self.base_cur)].get("bids")[0]['p']
-#            self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)] = \
-#                huobi_market.market_detail(self.base_cur, self.mid_cur)
-            print('ask1=',market_price_sell_1)
-            print('bid1=',market_price_buy_1)
-#            print(self.market_price_tick)
-#            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
-            symbol = self.get_market_name(self.quote_cur,self.base_cur)
+                self.market_price_tick["{}_{}".format(self.quote_cur, self.base_cur)].get("bids")[0]['p']
+            #            self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)] = \
+            #                huobi_market.market_detail(self.base_cur, self.mid_cur)
+            print('ask1=', market_price_sell_1)
+            print('bid1=', market_price_buy_1)
+            #            print(self.market_price_tick)
+            #            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
+            symbol = self.get_market_name(self.quote_cur, self.base_cur)
             print(symbol)
-            closePrice=float(huobi_market.get_market_close(symbol.upper()))
-            print('closePrice=',closePrice)
-            if(closePrice==0):
+            closePrice = float(huobi_market.get_market_close(symbol.upper()))
+            print('closePrice=', closePrice)
+            if (closePrice == 0):
                 return -1
             # sym_info=huobi_market.get_symbols(symbol)
-#            self.print_log('sym_info'+str(sym_info))
-#             digits=sym_info.get('amount-precision')
-#             self.min_trade_unit=sym_info.get('min-order-amt')
-#             print('digits=
+            #            self.print_log('sym_info'+str(sym_info))
+            #             digits=sym_info.get('amount-precision')
+            #             self.min_trade_unit=sym_info.get('min-order-amt')
+            #             print('digits=
             if symbol.upper() == 'ETH_USDT': digits = 100
             if symbol.upper() == 'BTC_USDT': digits = 10
 
-            buylots_avl=self.get_currency_available(huobi_market,self.quote_cur)/closePrice
+            buylots_avl = self.get_currency_available(huobi_market, self.quote_cur) / closePrice
             # buylots_avl=round(buylots_avl,digits)
-            buylots_avl=math.floor(buylots_avl*digits)/digits
-#            matradesys.buy_enter(huobi_market,buylots)
-#             selllots_avl=self.get_currency_available(huobi_market,self.base_cur)
-            selllots_avl =buylots_avl# math.floor(selllots_avl * digits)/digits
-#            return
+            buylots_avl = math.floor(buylots_avl * digits) / digits
+            #            matradesys.buy_enter(huobi_market,buylots)
+            #             selllots_avl=self.get_currency_available(huobi_market,self.base_cur)
+            selllots_avl = buylots_avl  # math.floor(selllots_avl * digits)/digits
+            #            return
 
-
-            n=(closePrice-self.medialPrice)/self.stepGrid
-            lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
-            lastOrderPrice=float(lastOrderPrice)
-            amount=float(amount)
-            if lastOrderPrice>0:
-            #cmd价差大于网格时允许交易
-                cmd=abs(closePrice-lastOrderPrice)-self.stepGrid
-            #判断交易方向
-                diretion=closePrice-lastOrderPrice
-#                selllots=amount
-#                buylots=amount
-            else:
-                print('近两日无交易')
-                diretion=closePrice-self.medialPrice
-                r=math.modf(n)
-                cmd=1
-#                if math.fabs(r[0])>0.75 or math.fabs(r[0])<0.25:
-#                    cmd=1
-#                else:
-#                    cmd=0
-            print('n=',n)
-            print('lastOrderPrice=',lastOrderPrice)
+            n = (closePrice - self.medialPrice) / self.stepGrid
+            lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+            lastOrderPrice = float(lastOrderPrice)
+            amount = float(amount)
+            if lastOrderPrice > 0:
+                # cmd价差大于网格时允许交易
+                cmd = abs(closePrice - lastOrderPrice) - self.stepGrid
+                # 判断交易方向
+                diretion = closePrice - lastOrderPrice
+                print(diretion)
+            # selllots=amount
+            # buylots=amount
+            #             else:
+            #                 print('近两日无交易')
+            #                 diretion=closePrice-self.medialPrice
+            #                 r=math.modf(n)
+            #                 cmd=1
+            # #                if math.fabs(r[0])>0.75 or math.fabs(r[0])<0.25:
+            # #                    cmd=1
+            # #                else:
+            # #                    cmd=0
+            print('n=', n)
+            print('lastOrderPrice=', lastOrderPrice)
             print(closePrice)
             print(cmd)
             print(self.stepGrid)
-#            '''buy check
-            logStr_err="小于最小交易单位:"+symbol+' '+str(self.min_trade_unit)
+            #            '''buy check
+            logStr_err = "小于最小交易单位:" + symbol + ' ' + str(self.min_trade_unit)
 
-            if self.sellCmd==False or self.buyCmd==False:
-                if n<0:
-                    self.buyCmd=True
-                    self.sellCmd==False
-                elif n>0:
-                    self.sellCmd=True
-                    self.buyCmd==False
+            if self.sellCmd == False or self.buyCmd == False:
+                if n < 0:
+                    self.buyCmd = True
+                    self.sellCmd == False
+                elif n > 0:
+                    self.sellCmd = True
+                    self.buyCmd == False
 
-                if cmd>0 and diretion<0:#open buy
-                    self.doAction=1
+                if cmd > 0 and diretion < 0:  # open buy
+                    self.doAction = 1
 
-                    buylots=self.pos_first_lots*self.pos_rate_list[0]
-                    buylots=downRound(buylots,digits)
-                    market_buy_size =buylots         # self.get_market_buy_size(huobi_market)
-                    market_buy_size = downRound(market_buy_size, 6)
+                    buylots = self.pos_first_lots * self.pos_rate_list[0]
+                    buylots = pf.downRound(buylots, digits)
+                    market_buy_size = buylots  # self.get_market_buy_size(huobi_market)
+                    # market_buy_size = pf.downRound(market_buy_size, 6)
                     if market_buy_size >= self.min_trade_unit:
-                        if market_buy_size<buylots_avl:
-                            res=self.buy_enter(huobi_market, market_buy_size)
-                        else:#改变方向补仓
-                            market_sell_size=downRound(0.5*selllots_avl,digits)
-                            res=self.sell_enter(huobi_market, market_sell_size)
+                        if market_buy_size < buylots_avl:
+                            res = self.buy_enter(huobi_market, market_buy_size)
+                        # else:#改变方向补仓
+                        #     market_sell_size=pf.downRound(0.5*selllots_avl,digits)
+                        #     res=self.sell_enter(huobi_market, market_sell_size)
                     else:
                         self.print_log(logStr_err)
-#                    print('buylots=',buylots)
-                    self.logstr1='buylots='+str(buylots)
-#                    logger.info(outStr)
+                    #                    print('buylots=',buylots)
+                    self.logstr1 = 'buylots=' + str(buylots)
+                    #                    logger.info(outStr)
 
+                    if self.pos_count_buy >= self.pos_count_max: self.pos_count_buy = 0
+                elif cmd > 0 and diretion > 0:  # close buy
+                    self.doAction = 2
 
-                    if self.pos_count_buy>=self.pos_count_max:self.pos_count_buy=0
-                elif cmd>0 and diretion>0:#close buy
-                    self.doAction=2
-
-#                    if self.pos_count_buy<0:self.pos_count_buy=0
-                    selllots=self.pos_first_lots*self.pos_rate_list[0]
-                    selllots = downRound(selllots, digits)
-                    market_sell_size =selllots          # self.get_market_sell_size(huobi_market)
-                    market_sell_size = downRound(market_sell_size, 6)
+                    #                    if self.pos_count_buy<0:self.pos_count_buy=0
+                    selllots = self.pos_first_lots * self.pos_rate_list[0]
+                    selllots = pf.downRound(selllots, digits)
+                    market_sell_size = selllots  # self.get_market_sell_size(huobi_market)
+                    # market_sell_size = downRound(market_sell_size, 6)
 
                     if market_sell_size >= self.min_trade_unit:
-                        if market_sell_size<selllots_avl:
-                            res=self.sell_enter(huobi_market, market_sell_size)
-                        else:
-                            market_buy_size=downRound(0.5*buylots_avl,digits)
-                            res=self.buy_enter(huobi_market, market_buy_size)
+                        if market_sell_size < selllots_avl:
+                            res = self.sell_enter(huobi_market, market_sell_size)
+                        # else:
+                        #     market_buy_size=downRound(0.5*buylots_avl,digits)
+                        #     res=self.buy_enter(huobi_market, market_buy_size)
                     else:
                         self.print_log(logStr_err)
-                    self.logstr2='selllots='+str(selllots)
-#                    logger.info(outStr)
+                    self.logstr2 = 'selllots=' + str(selllots)
+                #                    logger.info(outStr)
 
-#                    self.pos_count_sell+=1
+                #                    self.pos_count_sell+=1
                 else:
-                    self.doAction=0
+                    self.doAction = 0
 
-                outStr="买入区：{0},卖出区:{1}, 动作:{2}, 方向:{3}\nlastOrderPrice={4},closePrice={5},stepGrid={6},priceDeff={7}"\
-                        .format(self.buyCmd,self.sellCmd,self.doAction,diretion,lastOrderPrice,closePrice,self.stepGrid,cmd)
+                outStr = "买入区：{0},卖出区:{1}, 动作:{2}, 方向:{3}\nlastOrderPrice={4},closePrice={5},stepGrid={6},priceDeff={7}" \
+                    .format(self.buyCmd, self.sellCmd, self.doAction, diretion, lastOrderPrice, closePrice,
+                            self.stepGrid, cmd)
                 logger.info(outStr)
                 print(outStr)
                 self.print_log(self.logstr1)
                 self.print_log(self.logstr2)
-                self.sellCmd=False
-                self.buyCmd==False
-                if self.doAction==0:
+                self.sellCmd = False
+                self.buyCmd == False
+                if self.doAction == 0:
                     logger.info('无操作')
-#                    return 0
+            #                    return 0
             return 1
         except:
             logger.error(traceback.format_exc())
             print(traceback.format_exc())
             return -99
-#    def sum_slippage_fee(self):
-#        return self.base_quote_slippage + self.base_mid_slippage + self.quote_mid_slippage + \
-#               self.base_quote_fee + self.base_mid_fee + self.quote_mid_fee
 
-#    @staticmethod
-    def get_market_name(self, quote,base):
-            return "{0}_{1}".format(quote,base)
+    #    def sum_slippage_fee(self):
+    #        return self.base_quote_slippage + self.base_mid_slippage + self.quote_mid_slippage + \
+    #               self.base_quote_fee + self.base_mid_fee + self.quote_mid_fee
+
+    #    @staticmethod
+    def get_market_name(self, quote, base):
+        return "{0}_{1}".format(quote.upper(), base.upper())
 
     # 计算最保险的下单数量
     '''
 
     '''
+
     def get_market_buy_size(self, huobi_market):
-        market_buy_size = self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][1] \
+        market_buy_size = self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("asks")[0][1] \
                           * self.order_ratio_base_quote
         base_mid_sell_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)].get("bids")[0][1] \
                              * self.order_ratio_base_mid
         base_quote_off_reserve_buy_size = \
-            (huobi_market.account_available(self.quote_cur, self.get_market_name(self.quote_cur,self.base_cur))
+            (huobi_market.account_available(self.quote_cur, self.get_market_name(self.quote_cur, self.base_cur))
              - self.base_quote_quote_reserve) / \
-            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("asks")[0][0]
         quote_mid_off_reserve_buy_size = \
             (huobi_market.account_available(self.mid_cur, self.get_market_name(self.quote_cur, self.mid_cur)) -
              self.quote_mid_mid_reserve) / \
             self.market_price_tick["{0}_{1}".format(self.quote_cur, self.mid_cur)].get("asks")[0][0] / \
-            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("asks")[0][0]
         base_mid_off_reserve_sell_size = \
             huobi_market.account_available(self.base_cur, self.get_market_name(self.base_cur, self.mid_cur)) - \
             self.base_mid_base_reserve
         logger.info("计算数量：{0}，{1}，{2}，{3}，{4}".format(market_buy_size, base_mid_sell_size,
-                                                      base_quote_off_reserve_buy_size, quote_mid_off_reserve_buy_size,
-                                                      base_mid_off_reserve_sell_size))
+                                                          base_quote_off_reserve_buy_size,
+                                                          quote_mid_off_reserve_buy_size,
+                                                          base_mid_off_reserve_sell_size))
         return math.floor(min(market_buy_size, base_mid_sell_size, base_quote_off_reserve_buy_size,
-                              quote_mid_off_reserve_buy_size, base_mid_off_reserve_sell_size)*10000)/10000
+                              quote_mid_off_reserve_buy_size, base_mid_off_reserve_sell_size) * 10000) / 10000
 
     '''
 
     '''
+
     def get_market_sell_size(self, huobi_market):
-        market_sell_size = self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("bids")[0][1] \
+        market_sell_size = self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("bids")[0][1] \
                            * self.order_ratio_base_quote
         base_mid_buy_size = self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)].get("asks")[0][1] \
                             * self.order_ratio_base_mid
         base_quote_off_reserve_sell_size = \
-            huobi_market.account_available(self.base_cur, self.get_market_name(self.quote_cur,self.base_cur)) \
+            huobi_market.account_available(self.base_cur, self.get_market_name(self.quote_cur, self.base_cur)) \
             - self.base_quote_base_reserve
         quote_mid_off_reserve_sell_size = \
             (huobi_market.account_available(self.quote_cur, self.get_market_name(self.quote_cur, self.mid_cur)) -
              self.quote_mid_quote_reserve) / \
-            self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("bids")[0][0]
+            self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("bids")[0][0]
         base_mid_off_reserve_buy_size = \
             (huobi_market.account_available(self.mid_cur, self.get_market_name(self.base_cur, self.mid_cur)) -
              self.base_mid_mid_reserve) / \
             self.market_price_tick["{0}_{1}".format(self.base_cur, self.mid_cur)].get("asks")[0][0]
         logger.info("计算数量：{0}，{1}，{2}，{3}，{4}".format(market_sell_size, base_mid_buy_size,
-                    base_quote_off_reserve_sell_size, quote_mid_off_reserve_sell_size, base_mid_off_reserve_buy_size))
+                                                          base_quote_off_reserve_sell_size,
+                                                          quote_mid_off_reserve_sell_size,
+                                                          base_mid_off_reserve_buy_size))
         return math.floor(min(market_sell_size, base_mid_buy_size, base_quote_off_reserve_sell_size,
-                          quote_mid_off_reserve_sell_size, base_mid_off_reserve_buy_size) * 10000) / 10000
+                              quote_mid_off_reserve_sell_size, base_mid_off_reserve_buy_size) * 10000) / 10000
 
     '''
 
     '''
+
     def buy_enter(self, huobi_market, market_buy_size):
         logger.info("多单开仓 size:{0}".format(market_buy_size))
         # return
-        order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+        order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+                                              price=self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].get("asks")[0]['p']
+                                             , amount=market_buy_size)
         logger.info("买入结果：{0}".format(order_result))
         time.sleep(2)
-        if not huobi_market.order_normal(order_result,cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)):
+        if not huobi_market.order_normal(order_result,
+                                         cur_market_name=self.get_market_name(self.quote_cur, self.base_cur)):
             # 交易失败
             logger.info("buy交易失败，退出 {0}".format(order_result))
             return 0
         # 获取真正成交量
-        retry, already_close_amount = 0, 0.0
-        while retry < 3:   # 循环3次检查是否交易成功
-            if retry == 2:
-                # 取消剩余未成交的
-#                self.pos_count_buy-=1
-                huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur,self.base_cur))
-                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur,self.base_cur))
-            field_amount = float(huobi_market.get_order_processed_amount(
-                order_result, cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)))
-            logger.info("field_amount:{0}_{1}".format(field_amount,already_close_amount))
-            retry += 1
-            time.sleep(2)
-            if field_amount-already_close_amount < self.min_trade_unit:
-                logger.info("没有新的成功交易或者新成交数量太少")
-                continue
-
-            already_close_amount = field_amount
-            if field_amount >= market_buy_size:  # 已经完成指定目标数量的套利
-                logger.info("完成多单开仓")
-#                huobi_market.get_orders_history()
-                return 1
+        # retry, already_close_amount = 0, 0.0
+        # while retry < 3:  # 循环3次检查是否交易成功
+        #     if retry == 2:
+        #         # 取消剩余未成交的
+        #         #                self.pos_count_buy-=1
+        #         huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur, self.base_cur))
+        #         self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur, self.base_cur))
+        #     field_amount = float(huobi_market.get_order_processed_amount(
+        #         order_result, cur_market_name=self.get_market_name(self.quote_cur, self.base_cur)))
+        #     logger.info("field_amount:{0}_{1}".format(field_amount, already_close_amount))
+        #     retry += 1
+        #     time.sleep(2)
+        #     if field_amount - already_close_amount < self.min_trade_unit:
+        #         logger.info("没有新的成功交易或者新成交数量太少")
+        #         continue
+        #
+        #     already_close_amount = field_amount
+        #     if field_amount >= market_buy_size:  # 已经完成指定目标数量的套利
+        #         logger.info("完成多单开仓")
+        #         #                huobi_market.get_orders_history()
+        #         return 1
         return 0
+
     '''
 
     '''
+
     def sell_enter(self, huobi_market, market_sell_size):
         logger.info("空单开仓")
         # return
-        order_result = huobi_market.sell(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),
-                                         price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].
-                                         get("bids")[0][0], amount=market_sell_size)
+        order_result = huobi_market.open_short(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+                                         price=self.market_price_tick["{0}_{1}".format(self.quote_cur, self.base_cur)].
+                                         get("bids")[0]['p'], amount=market_sell_size)
         if not huobi_market.order_normal(order_result,
-                                         cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)):
+                                         cur_market_name=self.get_market_name(self.quote_cur, self.base_cur)):
             # 交易失败
             logger.info("sell交易失败，退出 {0}".format(order_result))
             return 0
-        time.sleep(2)
+        # time.sleep(2)
         # 获取真正成交量
-        retry, already_close_amount = 0, 0.0
-        while retry < 3:  # 循环3次检查是否交易成功
-            if retry == 2:
-                # 取消剩余未成交的
-#                self.pos_count_buy+=1
-                huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur,self.base_cur))
-
-                self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur,self.base_cur))
-
-            field_amount = float(huobi_market.get_order_processed_amount(
-                    order_result, cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)))
-            logger.info("field_amount:{0}_{1}".format(field_amount, already_close_amount))
-            retry += 1
-            time.sleep(2)
-            if field_amount - already_close_amount < self.min_trade_unit:
-                logger.info("没有新的成功交易或者新成交数量太少")
-                continue
-            already_close_amount = field_amount
-            if field_amount >= market_sell_size:  # 已经完成指定目标数量的套利
-                logger.info("完成空单开仓")
-#                huobi_market.get_orders_history()
-                return 1
+        # retry, already_close_amount = 0, 0.0
+        # while retry < 3:  # 循环3次检查是否交易成功
+        #     if retry == 2:
+        #         # 取消剩余未成交的
+        #         #                self.pos_count_buy+=1
+        #         huobi_market.cancel_order(order_result, self.get_market_name(self.quote_cur, self.base_cur))
+        #
+        #         self.wait_for_cancel(huobi_market, order_result, self.get_market_name(self.quote_cur, self.base_cur))
+        #
+        #     field_amount = float(huobi_market.get_order_processed_amount(
+        #         order_result, cur_market_name=self.get_market_name(self.quote_cur, self.base_cur)))
+        #     logger.info("field_amount:{0}_{1}".format(field_amount, already_close_amount))
+        #     retry += 1
+        #     time.sleep(2)
+        #     if field_amount - already_close_amount < self.min_trade_unit:
+        #         logger.info("没有新的成功交易或者新成交数量太少")
+        #         continue
+        #     already_close_amount = field_amount
+        #     if field_amount >= market_sell_size:  # 已经完成指定目标数量的套利
+        #         logger.info("完成空单开仓")
+        #         #                huobi_market.get_orders_history()
+        #         return 1
         return 0
-#
 
+    #
 
     def close_buy_cur_pair(self, buy_size, huobi_market, cur_pair):
         """
@@ -513,11 +531,13 @@ class ClassET:
         except:
             logger.error(traceback.format_exc())
         logger.info("结束卖出{0}".format(cur_pair))
-# =============================================================================
-# get mediaPrice
-# =============================================================================
-    def calcMedialPrice(highPrice,lowPrice):
-        return (highPrice+lowPrice)/2
+
+    # =============================================================================
+    # get mediaPrice
+    # =============================================================================
+    def calcMedialPrice(highPrice, lowPrice):
+        return (highPrice + lowPrice) / 2
+
     @staticmethod
     def wait_for_cancel(huobi_market, order_result, market_name):
         """
@@ -528,21 +548,25 @@ class ClassET:
         :return:
         """
         while huobi_market.get_order_status(order_result, market_name) \
-                not in [2, 3, 6, "partial-canceled", "filled", "canceled"]:    # 订单完成或者取消或者部分取消
+                not in [2, 3, 6, "partial-canceled", "filled", "canceled"]:  # 订单完成或者取消或者部分取消
             time.sleep(0.1)
-# =============================================================================
-#   getAmount
-# =============================================================================
-    def get_currency_available(self,market,curPara):
-        cur_availalbe=market.account_available(curPara)
+
+    # =============================================================================
+    #   getAmount
+    # =============================================================================
+    def get_currency_available(self, market, curPara):
+        cur_availalbe = market.account_available(curPara)
         return cur_availalbe
-# =============================================================================
-# outPut Log
-# =============================================================================
-    def print_log(self,strLog):
+
+    # =============================================================================
+    # outPut Log
+    # =============================================================================
+    def print_log(self, strLog):
         print(strLog)
         logger.info(strLog)
         return 0
+
+
 # =============================================================================
 #
 # =============================================================================
@@ -550,69 +574,70 @@ if __name__ == "__main__":
 
     huobi_market = marketHelper.Market()
 
-    strout=\
-            '\n                  ET网格智能交易系统3.0\
+    strout = \
+        '\n                  ET网格智能交易系统3.0\
              \n*************************版权声明***************************\
              \n********************All Rights Reserved*********************\
              \n软件开发：海易，需求订制联系微信：yyy99966\
              \n优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年\n'
     logger.info(strout)
     print(strout)
-    if accCfg.check_authCode==False:
+    if accCfg.check_authCode == False:
         print('本账户软件使用未授权或者授权码不正确,请联系你的服务商')
 
     else:
-        r=huobi_market.get_accountInfo()
+        r = huobi_market.get_accountInfo()
         print(str(r))
-        account_id=r
+        account_id = r
 
-        if r==-1:
-    #        print(r)
+        if r == -1:
+            #        print(r)
             print('API账户连接失败，请确认配置API访问键值对正确？')
         else:
-#            r=huobi_market.get_orders_history()
-#            print(str(r))
-#            sql.ins_order(r)
-            list_value=accCfg.sym_list_value[1]
+            #            r=huobi_market.get_orders_history()
+            #            print(str(r))
+            #            sql.ins_order(r)
+            list_value = accCfg.sym_list_value[1]
             print(list_value)
-    #    gridtradesys = ClassET('eos','eth',0.021877,0.015780,0.10)
-            gridtradesys = ClassET(list_value[0],list_value[1],float(list_value[2]),float(list_value[3]),float(list_value[4]),float(list_value[5]))
-            if len(accCfg.sym_list_value)>2:
-                list_value=accCfg.sym_list_value[2]
+            #    gridtradesys = ClassET('eos','eth',0.021877,0.015780,0.10)
+            gridtradesys = ClassET(list_value[0], list_value[1], float(list_value[2]), float(list_value[3]),
+                                   float(list_value[4]), float(list_value[5]))
+            if len(accCfg.sym_list_value) > 2:
+                list_value = accCfg.sym_list_value[2]
                 print(list_value)
-                gridtradesys1 = ClassET(list_value[0],list_value[1],float(list_value[2]),float(list_value[3]),float(list_value[4]),float(list_value[5]))
-
+                gridtradesys1 = ClassET(list_value[0], list_value[1], float(list_value[2]), float(list_value[3]),
+                                        float(list_value[4]), float(list_value[5]))
 
             while True:
 
                 print(strout)
-    #            logging.info(strout)
-                timeLenth=10#accCfg.check_authCode
+                #            logging.info(strout)
+                timeLenth = 10  # accCfg.check_authCode
 
-                if timeLenth<=0:
+                if timeLenth <= 0:
                     print("软件使用已到期，感谢您的使用，若继续使用请联系作者")
                     break
-                print("到期日期为 :", timeLenth,"天后，若继续使用请联系作者")
+                print("到期日期为 :", timeLenth, "天后，若继续使用请联系作者")
                 i = datetime.datetime.now()
-                if i.minute % 5==0 :
-                    if write_flag==0:
-                        write_flag=1
+                if i.minute % 5 == 0:
+                    if write_flag == 0:
+                        write_flag = 1
                         # ab=huobi_market.get_assets(account_id)
                         # print(ab)
-                      #  sql.ins_assets(huobi_market,ab,account_id)
+                    #  sql.ins_assets(huobi_market,ab,account_id)
                 # else:
                 #     write_flag=0
 
-                res=gridtradesys.strategy()
+                res = gridtradesys.strategy()
                 time.sleep(gridtradesys.interval)
-                if res<=-1:
-    #                break
-                    errInfo="'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')"
+                if res <= -1:
+                    #                break
+                    errInfo = "'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')"
                     print(errInfo)
                     logger.error(errInfo)
 
                     continue
-                if len(accCfg.sym_list_value)>2:
+                if len(accCfg.sym_list_value) > 2:
                     print("")
-                    res=gridtradesys1.strategy()
+                    res = gridtradesys1.strategy()
                     time.sleep(gridtradesys.interval)

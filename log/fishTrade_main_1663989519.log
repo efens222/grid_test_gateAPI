@@ -1,0 +1,88 @@
+2022-09-24 11:18:40,144 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-24 11:18:40,144 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-24 11:18:42,098 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('/log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/data.json'
+
+2022-09-24 11:18:44,108 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:18:46,240 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('/log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/data.json'
+
+2022-09-24 11:18:48,245 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:18:50,223 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 250, in get_closed_posHistories
+    return json_operation(r.json())
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 214, in json_operation
+    with open('/log/data.json', 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/data.json'
+
+2022-09-24 11:18:52,231 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-24 11:18:53,860 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 200, in strategy
+    lastOrderPrice,amount,_type=huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 236, in get_last_order_price
+    result = self.get_orders_history(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 270, in get_orders_history
+    result = util.future_api.get_closed_posHistories(symbol)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 241, in get_closed_posHistories
+    r = requests.request('GET', host + prefix + url+'?'+query_param, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Python\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Python\lib\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "D:\Python\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+2022-09-24 11:18:55,867 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')

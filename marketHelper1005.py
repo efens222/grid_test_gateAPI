@@ -16,9 +16,12 @@ import time
 import requests
 import util.accountConfig as acfg
 import json
-
+import util.helper as uh
 
 # 包装一个不同市场的统一接口 方便同一调用
+
+
+
 class Market:
     acc_id = None
     acc_info = {}
@@ -126,11 +129,11 @@ class Market:
         else:
             return 0
 
-    def open_long(self, symbol, amount, price):
+    def open_long(self, symbol, price, amount):
         '''
         long-limit
         '''
-        # print("long", symbol, price, amount)
+        print("long", symbol, price, amount)
         if self.market_name == "huobi":
             #            base_cur, quote_cur = symbol.split("_")
             return util.future_api.openOrder(symbol, amount, price, 0)
@@ -222,40 +225,50 @@ class Market:
     def get_last_order_price(self, symbol):
         # print(orders_list('eoseth','filled'))
         if self.market_name == "huobi":
-            n = 0
-            d2 = uh.get_today()
-            d1 = uh.get_start_day(d2)
-            while (n < 5):
-                n = n + 1
-                #                d1_str=time.strftime("%Y-%m-%d", d1)
-                #                d2_str=time.strftime("%Y-%m-%d", d2)
-                #                result=exchangeConnection.huobi.huobiService913.orders_list(symbol,states,None,d1,d2)
-                result = exchangeConnection.huobi.huobiService913.orders_matchresults(symbol, None, d1, d2)
-
-                #                print(result)
-                if result.get("status") == "ok":
-                    if result.get('data') != []:
-                        #               lastorder = result.get('data')[0].get('price')
-                        lastorder = result['data'][0]['price']
-                        amount = result['data'][0]['filled-amount']
-                        _type = result['data'][0]['type']
-                        return lastorder, amount, _type
-                    else:
-                        print(d1)
-                        d2 = uh.get_start_day(d1)
-                        d1 = uh.get_start_day(d2)
+            r=uf_api.get_mytrades(symbol,1)
+            print(r)
+            if r is not None:
+                lastorder = r['price']
+                amount = r['size']
+                if amount>0:_type=1
                 else:
-                    return -1, 0, 0
-            else:
-                return -1, 0, 0
+                    _type =-1
+                return lastorder, amount, _type
+            else:return -1, 0, 0
+            # n = 0
+            # d2 = uh.get_today()
+            # d1 = uh.get_start_day(d2)
+            # while (n < 5):
+            #     n = n + 1
+            #     #                d1_str=time.strftime("%Y-%m-%d", d1)
+            #     #                d2_str=time.strftime("%Y-%m-%d", d2)
+            #     #                result=exchangeConnection.huobi.huobiService913.orders_list(symbol,states,None,d1,d2)
+            #     result = self.get_orders_history(symbol)
+            #     print(result)
+            #     return
+            #     if result.get("status") == "ok":
+            #         if result.get('data') != []:
+            #             #               lastorder = result.get('data')[0].get('price')
+            #             lastorder = result['data'][0]['price']
+            #             amount = result['data'][0]['filled-amount']
+            #             _type = result['data'][0]['type']
+            #             return lastorder, amount, _type
+            #         else:
+            #             print(d1)
+            #             d2 = uh.get_start_day(d1)
+            #             d1 = uh.get_start_day(d2)
+            #     else:
+            #         return -1, 0, 0
+            # else:
+            #     return -1, 0, 0
         else:
             return 0, 0, 0
 
     # =============================================================================
     #         get order history
     # =============================================================================
-    def get_orders_history(self):
-        if self.market_name == "huobi":
+    def get_orders_history(self,symbol='ETH_USDT'):
+        # if self.market_name == "huobi":
             #            n=0
             #            d2=uh.get_today()
             #            d1=uh.get_start_day(d2)
@@ -264,36 +277,35 @@ class Market:
             #                d1_str=time.strftime("%Y-%m-%d", d1)
             #                d2_str=time.strftime("%Y-%m-%d", d2)
             #            result=exchangeConnection.huobi.huobiService913.orders_list(symbol,states,None,d1,d2)
-            result = exchangeConnection.huobi.huobiService913.orders_history()
+        result = util.future_api.get_closed_posHistories(symbol)
+        #result = {'time': 1663654338, 'pnl': '-167.0362105', 'side': 'short', 'contract': 'ETH_USDT', 'text': 'api'}
+        if result is not None:
+            if True:
+                #                    order_list=['']*10
+                #               lastorder = result.get('data')[0].get('price')
+                cols_list = [''] * 4
+                cols_list[0] = uh.time_to_timestr(result[0]['time'])
+                cols_list[1] = result[0]['pnl']
 
-            #            print(result)
-            if result.get("status") == "ok":
-                if result.get('data') != []:
-                    #                    order_list=['']*10
-                    #               lastorder = result.get('data')[0].get('price')
-                    cols_list = [''] * 11
-                    cols_list[0] = result['data'][0]['id']
-                    cols_list[1] = uh.time_to_timestr(result['data'][0]['finished-at'])
-                    cols_list[2] = result['data'][0]['symbol']
-                    cols_list[3] = result['data'][0]['type']
-                    cols_list[4] = result['data'][0]['price']
-                    cols_list[5] = result['data'][0]['field-amount']
-                    cols_list[6] = result['data'][0]['field-cash-amount']
-                    cols_list[7] = result['data'][0]['field-fees']
-                    cols_list[8] = result['data'][0]['source']
-                    cols_list[9] = result['data'][0]['state']
-                    cols_list[10] = result['data'][0]['account-id']
-                    return cols_list
-                else:
-                    #                    print(d1)
-                    #                    d2=uh.get_start_day(d1)
-                    #                    d1=uh.get_start_day(d2)
-                    #                        continue
-                    return 0, 0, 0
+                cols_list[2] = result[0]['side']
+                cols_list[3] = result[0]['contract']
+                # cols_list[4] = result['data'][0]['price']
+                # cols_list[5] = result['data'][0]['field-amount']
+                # cols_list[6] = result['data'][0]['field-cash-amount']
+                # cols_list[7] = result['data'][0]['field-fees']
+                # cols_list[8] = result['data'][0]['source']
+                # cols_list[9] = result['data'][0]['state']
+                # cols_list[10] = result['data'][0]['account-id']
+                return cols_list
             else:
-                return -1, 0, 0
+                #                    print(d1)
+                #                    d2=uh.get_start_day(d1)
+                #                    d1=uh.get_start_day(d2)
+                #                        continue
+                return 0, 0, 0
         else:
-            return -2, 0, 0
+            return -1, 0, 0
+
 
     # =============================================================================
     #
@@ -315,7 +327,7 @@ class Market:
         """
         if self.market_name == "huobi":
             #            base_cur, quote_cur = symbol.split("_")
-            if order_result.get("status") == "ok":
+            if order_result.status_code < 400:
                 return True
             else:
                 return False
@@ -400,13 +412,14 @@ if __name__ == "__main__":
     print(b)
     c = huobi.get_market_close()
     print(c)
-    d=huobi.market_detail('usdt','eth')
-    print(d)
+    d=huobi.market_detail('eth','usdt')
+    print('d=',d)
     # huobi.open_short_market('ETH_USDT', 1)
     # huobi.close_short('ETH_USDT', 0.1, 0.0, 1)
     # print(huobi.close_all_order('ETH_USDT'))
     ##        print huobi.(get_symbols())
     ##    print(huobi.get_accounts())
     print(huobi.get_total_assets())
-#     print(huobi.get_orders_history())
+    print(huobi.get_orders_history())
+    huobi.get_last_order_price()
 #     print(huobi.get_orderid(62657991295))

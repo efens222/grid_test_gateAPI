@@ -48,11 +48,12 @@ def openOrder(contract="BTC_USDT", lots=0.01, price=0.0, type=0):
     if contract == "ETH_USDT":    size = lots * 100
     if price == 0.0:
         tif = "ioc"
+        body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+            price) + '","tif":"' + tif + '"}'
     else:
         tif = None
-
-    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
-        price) + '","tif":"' + tif + '"}'
+        body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+        price)  + '"}'
     print(body)
     # `gen_sign` 的实现参考认证一章
     sign_headers = gen_sign('POST', prefix + url, query_param, body)
@@ -173,7 +174,7 @@ def get_tradeInfo(contract='BTC_USDT'):
     headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
 
     url = '/futures/usdt/trades'
-    query_param = 'contract=BTC_USDT'
+    query_param = 'contract='+contract#BTC_USDT'
     r = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
     print(r.json())
 
@@ -211,16 +212,65 @@ def get_position(symbol='BTC_USDT'):
 
 def json_operation(data=None):
     # 写入 JSON 数据
-    with open('../log/data.json', 'w') as f:
+    with open('log/data.json', 'w') as f:
         json.dump(data, f)
 
     # # 读取数据
     # with open('../log/data.json', 'r') as f:
     #     data = json.load(f)
-    print(data['size'])
-    return data['size']
+    print(data[0])
+    return data[0]
 
 
+"""
+"""
+
+
+def get_closed_posHistories(symbol='BTC_USDT', num=1):
+    # host=
+    prefix = "/api/v4"
+    headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
+
+    url = '/futures/usdt/position_close'
+    query_param = 'contract='+symbol+'&limit='+str(num)#ETH_USDT"
+    # query_param =''
+    print(query_param)
+    # body = '{"limit":1,"contract":"BTC_USDT"}'
+    # `gen_sign` 的实现参考认证一章
+    sign_headers = gen_sign('GET', prefix + url, query_param)
+    headers.update(sign_headers)
+    r = requests.request('GET', host + prefix + url+'?'+query_param, headers=headers)
+    print(r.json())
+    print(r.status_code)
+    # json_str = json.dumps(r[0])
+    # print(json_str)
+    msg = str(r.status_code) + ' ' + str(r.json())
+    if r.status_code != 200:
+        print(msg)
+        return None
+    else:
+        return json_operation(r.json())
+'''
+# 查询平仓历史
+'''
+def get_mytrades(symbol='ETH_USDT', num=10):
+    prefix = "/api/v4"
+    headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
+
+    url = '/futures/usdt/my_trades'
+    # query_param = ''
+    query_param = 'contract=' + symbol + '&limit=' + str(num)  # ETH_USDT"
+    # `gen_sign` 的实现参考认证一章
+    sign_headers = gen_sign('GET', prefix + url, query_param)
+    headers.update(sign_headers)
+    r = requests.request('GET', host + prefix + url+'?'+query_param, headers=headers)
+    print(r.json())
+    msg = str(r.status_code) + ' ' + str(r.json())
+    if r.status_code != 200:
+        print(msg)
+        return None
+    else:
+        return json_operation(r.json())
 #####################################################################
 #####################################################################
 if __name__ == "__main__":
@@ -239,6 +289,8 @@ if __name__ == "__main__":
             closeOrder('ETH_USDT', "close_short")
         else:
             closeOrder('ETH_USDT', "close_long")
+    get_closed_posHistories()
+    get_mytrades()
     # json_operation(data)
     # host = "https://api.gateio.ws"
     # get_pos_mode()

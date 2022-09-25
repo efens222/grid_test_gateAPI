@@ -5,7 +5,7 @@ import sys
 import util.readPara1206 as rp
 
 
-list_value=rp.read_api_File("util/api.ini")
+list_value= rp.read_api_File("util/api.ini")
 # print(list_value)
 sym_list_value=rp.read_Ini_File("util/init.ini")
 check_authCode=rp.verify_usedRight()

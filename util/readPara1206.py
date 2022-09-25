@@ -33,7 +33,7 @@ def read_api_File(file="../util/api.ini"):
 # =============================================================================
 #
 # =============================================================================
-def read_Ini_File(file="../util/init.ini"):
+def read_Ini_File(file="init.ini"):
     # 打开文件
     fo = open(file, "r",-1,'utf-8')
 #    print ("文件名为: ", fo.name)

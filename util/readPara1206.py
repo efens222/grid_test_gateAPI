@@ -14,7 +14,7 @@ import sys
 # import marketHelper1005 as mh
 #         read apikey
 
-def read_api_File(file="api.ini"):
+def read_api_File(file="../util/api.ini"):
     fo = open(file, "r",-1,'utf-8')
     list_key = []
     list_value = []

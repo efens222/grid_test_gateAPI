@@ -45,7 +45,6 @@ from util.future_api import *
 import sys
 import marketHelper1005 as marketHelper
 import util.accountConfig as accCfg
-from  util.pub_fun import *
 #import sql_class1225 as sql
 import traceback
 import time
@@ -138,7 +137,7 @@ class ClassET:
         self.doAction=0 #1:openBuy,2:openSell,3:closeBuy,4:closeSell
         self.logstr1="str1"
         self.logstr2="str2"
-        strPara ="初始参数设置:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(
+        strPara ="初始参数设置:symbol={0}_{1} highPrice={2} lowPrice={3}  step_num={4}".format(\
                                         self.quote_cur,self.base_cur, self.highPrice, self.lowPrice,  self.step_num)
         logger.info(strPara)
         print(strPara)
@@ -175,7 +174,6 @@ class ClassET:
 #            print(self.market_price_tick)
 #            print(huobi_market.market_detail(self.quote_cur,self.base_cur))
             symbol = self.get_market_name(self.quote_cur,self.base_cur)
-            symbol=symbol.upper()
             print(symbol)
             closePrice=float(huobi_market.get_market_close(symbol.upper()))
             print('closePrice=',closePrice)

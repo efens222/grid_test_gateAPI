@@ -1,0 +1,925 @@
+2022-09-26 00:23:11,512 - fishTrade_main20220913.py[line:583] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-26 00:23:11,513 - fishTrade_main20220913.py[line:147] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-26 00:23:13,575 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:13,576 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:15,590 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:17,602 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:17,603 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:19,604 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:21,256 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:21,257 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:23,271 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:25,322 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:25,323 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:27,336 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:27,970 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 169, in strategy
+    huobi_market.market_detail(self.quote_cur, self.base_cur)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 399, in market_detail
+    r = requests.request('GET', acfg.gateApi + prefix + url + "?" + query_param, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Python\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Python\lib\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "D:\Python\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+2022-09-26 00:23:29,983 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:32,647 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:32,648 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:34,663 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:36,875 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:36,875 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:38,878 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:41,218 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:41,219 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:43,227 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:46,563 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:46,564 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:48,574 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:50,699 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:50,700 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:52,711 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:54,630 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:54,630 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:23:56,644 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:23:58,850 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:23:58,851 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:00,862 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:02,789 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:02,789 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:04,801 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:06,554 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:06,554 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:08,561 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:10,550 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:10,550 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:12,560 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:14,564 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:14,564 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:16,565 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:18,396 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:18,397 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:20,399 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:22,066 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:22,067 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:24,069 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:25,930 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:25,931 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:27,933 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:29,897 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:29,898 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:31,902 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:34,919 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:34,919 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:36,922 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:39,126 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:39,127 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:41,136 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:44,645 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:44,646 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:46,650 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:48,780 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:48,780 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:50,790 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:52,670 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:52,673 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:54,679 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:24:57,693 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:24:57,693 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:24:59,695 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:01,568 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:01,569 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:03,574 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:05,875 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:05,876 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:07,885 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:09,829 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:09,830 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:11,844 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:13,898 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:13,899 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:15,903 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:17,645 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:17,647 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:19,650 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:21,418 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:21,419 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:23,421 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:25,592 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:25,593 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:27,599 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:30,705 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:30,706 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:32,710 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:35,474 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:35,475 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:37,486 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:41,052 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:41,052 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:43,055 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:45,383 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:45,384 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:47,397 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:49,388 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:49,389 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:51,394 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:53,231 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:53,232 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:55,246 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:25:57,247 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:25:57,249 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:25:59,258 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:01,298 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:01,300 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:03,305 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:05,176 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:05,176 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:07,186 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:08,941 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:08,941 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:10,944 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:12,789 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:12,791 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:14,796 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:16,969 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:16,969 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:18,984 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:20,796 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:20,797 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:22,809 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:24,880 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:24,881 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:26,895 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:28,841 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:28,842 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:30,855 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:32,641 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:32,643 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:34,653 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:36,526 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:36,526 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:38,534 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:40,533 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:40,535 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:42,541 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:44,516 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:44,517 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:46,525 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:48,650 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:48,651 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:50,655 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:52,470 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:52,471 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:54,485 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:26:56,475 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:26:56,477 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:26:58,492 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:01,325 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:01,326 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:03,342 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:05,245 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:05,245 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:07,257 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:09,213 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:09,214 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:11,231 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:13,394 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:13,395 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:15,400 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:17,423 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:17,423 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:19,436 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:21,126 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:21,126 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:23,142 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:24,984 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:24,984 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:27,000 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:28,956 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:28,957 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:30,965 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:32,855 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:32,856 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:34,858 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:37,036 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:37,037 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:39,047 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:40,909 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:40,910 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:42,912 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:44,890 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:44,890 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:46,895 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:48,851 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:48,852 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:27:50,853 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:27:52,536 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:27:52,537 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+

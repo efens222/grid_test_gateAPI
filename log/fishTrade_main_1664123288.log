@@ -1,0 +1,67 @@
+2022-09-26 00:28:08,645 - fishTrade_main20220913.py[line:583] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-26 00:28:08,645 - fishTrade_main20220913.py[line:147] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-26 00:28:10,682 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:28:10,687 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:28:12,691 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:28:14,572 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-26 00:28:14,573 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(symbol=self.get_market_name(self.quote_cur, self.base_cur),
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 139, in open_long
+    return util.future_api.openOrder(symbol, amount, price, 0)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 54, in openOrder
+    body = '{"contract":"' + contract + '","size":"' + str(int(size)) + '","iceberg":0,"price":"' + str(
+TypeError: can only concatenate str (not "NoneType") to str
+
+2022-09-26 00:28:16,585 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 00:28:17,893 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 184, in strategy
+    closePrice = float(huobi_market.get_market_close(symbol.upper()))
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 120, in get_market_close
+    r = requests.request('GET', acfg.gateApi + prefix + url + "?" + query_param, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Python\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\Python\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Python\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Python\lib\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "D:\Python\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+

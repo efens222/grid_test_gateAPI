@@ -1,0 +1,52 @@
+2022-09-25 23:42:51,513 - fishTrade_main20220913.py[line:583] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-25 23:42:51,514 - fishTrade_main20220913.py[line:147] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-25 23:42:53,388 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-25 23:42:53,389 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(cur_market_name=self.get_market_name(self.quote_cur, self.base_cur),
+TypeError: Market.open_long() got an unexpected keyword argument 'cur_market_name'
+
+2022-09-25 23:42:55,399 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 23:42:57,412 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-25 23:42:57,412 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(cur_market_name=self.get_market_name(self.quote_cur, self.base_cur),
+TypeError: Market.open_long() got an unexpected keyword argument 'cur_market_name'
+
+2022-09-25 23:42:59,425 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 23:43:02,362 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-25 23:43:02,362 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(cur_market_name=self.get_market_name(self.quote_cur, self.base_cur),
+TypeError: Market.open_long() got an unexpected keyword argument 'cur_market_name'
+
+2022-09-25 23:43:04,375 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 23:43:06,527 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-25 23:43:06,527 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(cur_market_name=self.get_market_name(self.quote_cur, self.base_cur),
+TypeError: Market.open_long() got an unexpected keyword argument 'cur_market_name'
+
+2022-09-25 23:43:08,534 - fishTrade_main20220913.py[line:637] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 23:43:12,146 - fishTrade_main20220913.py[line:372] - INFO: 多单开仓 size:0.1
+2022-09-25 23:43:12,147 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 250, in strategy
+    res = self.buy_enter(huobi_market, market_buy_size)
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 374, in buy_enter
+    order_result = huobi_market.open_long(cur_market_name=self.get_market_name(self.quote_cur, self.base_cur),
+TypeError: Market.open_long() got an unexpected keyword argument 'cur_market_name'
+

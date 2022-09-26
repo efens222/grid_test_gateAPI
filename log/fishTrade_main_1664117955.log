@@ -1,0 +1,77 @@
+2022-09-25 22:59:16,223 - fishTrade_main20220913.py[line:584] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-25 22:59:16,223 - fishTrade_main20220913.py[line:147] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1500.0  step_num=70.0
+2022-09-25 22:59:18,142 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 205, in strategy
+    lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 231, in get_last_order_price
+    lastorder = r[0]['price']
+KeyError: 0
+
+2022-09-25 22:59:20,154 - fishTrade_main20220913.py[line:638] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 22:59:21,775 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 205, in strategy
+    lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 231, in get_last_order_price
+    lastorder = r[0]['price']
+KeyError: 0
+
+2022-09-25 22:59:23,787 - fishTrade_main20220913.py[line:638] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 22:59:25,522 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 205, in strategy
+    lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 231, in get_last_order_price
+    lastorder = r[0]['price']
+KeyError: 0
+
+2022-09-25 22:59:27,528 - fishTrade_main20220913.py[line:638] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 22:59:29,484 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 205, in strategy
+    lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 231, in get_last_order_price
+    lastorder = r[0]['price']
+KeyError: 0
+
+2022-09-25 22:59:31,495 - fishTrade_main20220913.py[line:638] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-25 22:59:33,426 - fishTrade_main20220913.py[line:299] - ERROR: Traceback (most recent call last):
+  File "E:\GitHub_rep\test_gateAPI\fishTrade_main20220913.py", line 205, in strategy
+    lastOrderPrice, amount, _type = huobi_market.get_last_order_price(symbol)
+  File "E:\GitHub_rep\test_gateAPI\marketHelper1005.py", line 228, in get_last_order_price
+    r=uf_api.get_mytrades(symbol,1)
+  File "E:\GitHub_rep\test_gateAPI\util\future_api.py", line 265, in get_mytrades
+    r = requests.request('GET', host + prefix + url+'?'+query_param, headers=headers)
+  File "D:\Python\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "D:\Python\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Python\lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "D:\Python\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Python\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Python\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Python\lib\ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+
+2022-09-25 22:59:35,438 - fishTrade_main20220913.py[line:638] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')

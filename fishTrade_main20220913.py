@@ -55,7 +55,7 @@ import math
 import datetime
 # import ma_ind as maInd
 # 设置logging
-
+import util.pub_fun as upf
 
 # =============================================================================
 #  log date  shift
@@ -211,7 +211,7 @@ class ClassET:
                 print('近两日无交易')
                 diretion=closePrice-self.medialPrice
                 r=math.modf(n)
-                cmd=1
+                cmd=-1
 #                if math.fabs(r[0])>0.75 or math.fabs(r[0])<0.25:
 #                    cmd=1
 #                else:
@@ -236,15 +236,15 @@ class ClassET:
                     self.doAction=1
 
                     buylots=self.pos_first_lots*self.pos_rate_list[0]
-                    buylots=downRound(buylots,digits)
+                    buylots=pf.downRound(buylots,digits)
                     market_buy_size =buylots         # self.get_market_buy_size(huobi_market)
-                    market_buy_size = downRound(market_buy_size, 6)
+                    market_buy_size = upf.downRound(market_buy_size, digits)
                     if market_buy_size >= self.min_trade_unit:
                         if market_buy_size<buylots_avl:
                             res=self.buy_enter(huobi_market, market_buy_size)
-                        else:#改变方向补仓
-                            market_sell_size=downRound(0.5*selllots_avl,digits)
-                            res=self.sell_enter(huobi_market, market_sell_size)
+                        # else:#改变方向补仓
+                        #     market_sell_size=upf.downRound(0.5*selllots_avl,digits)
+                        #     res=self.sell_enter(huobi_market, market_sell_size)
                     else:
                         self.print_log(logStr_err)
 #                    print('buylots=',buylots)
@@ -258,16 +258,16 @@ class ClassET:
 
 #                    if self.pos_count_buy<0:self.pos_count_buy=0
                     selllots=self.pos_first_lots*self.pos_rate_list[0]
-                    selllots = downRound(selllots, digits)
+                    selllots = upf.downRound(selllots, digits)
                     market_sell_size =selllots          # self.get_market_sell_size(huobi_market)
-                    market_sell_size = downRound(market_sell_size, 6)
+                    # market_sell_size = downRound(market_sell_size, 6)
 
                     if market_sell_size >= self.min_trade_unit:
                         if market_sell_size<selllots_avl:
                             res=self.sell_enter(huobi_market, market_sell_size)
-                        else:
-                            market_buy_size=downRound(0.5*buylots_avl,digits)
-                            res=self.buy_enter(huobi_market, market_buy_size)
+                        # else:
+                        #     market_buy_size=downRound(0.5*buylots_avl,digits)
+                        #     res=self.buy_enter(huobi_market, market_buy_size)
                     else:
                         self.print_log(logStr_err)
                     self.logstr2='selllots='+str(selllots)

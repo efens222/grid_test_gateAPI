@@ -1,0 +1,49 @@
+2022-09-26 11:30:54,341 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-26 11:30:54,341 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-26 11:30:57,612 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:30:59,613 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:02,603 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:31:04,604 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:07,525 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:31:09,526 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:12,537 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:31:14,538 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:17,040 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:31:19,040 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:21,564 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+
+2022-09-26 11:31:23,564 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-26 11:31:26,363 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 239, in strategy
+    buylots=downRound(buylots,digits)
+NameError: name 'downRound' is not defined
+

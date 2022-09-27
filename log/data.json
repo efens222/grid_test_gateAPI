@@ -1,1 +1,1 @@
-[{"size": 10, "id": 2883616, "role": "taker", "contract": "ETH_USDT", "text": "api", "point_fee": "0", "fee": "0.0658675", "create_time": 1664123895.4576, "order_id": "810990825", "price": "1317.35"}]
+[{"size": -10, "id": 2917367, "role": "taker", "contract": "ETH_USDT", "text": "app", "point_fee": "0", "fee": "0.069375", "create_time": 1664248379.2279, "order_id": "813186588", "price": "1387.5"}]

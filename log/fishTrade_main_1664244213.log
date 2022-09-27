@@ -1,0 +1,68 @@
+2022-09-27 10:03:56,340 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-27 10:03:56,404 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=eth_usdt highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-27 10:04:00,374 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:00,375 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:00,375 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:00,375 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:07,921 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:07,922 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:07,922 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:07,922 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:16,074 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:16,074 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:16,074 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:16,075 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:24,739 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:24,740 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:24,740 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:24,740 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:31,482 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:31,482 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:31,482 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:31,482 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:36,564 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:36,564 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:36,564 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:36,564 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:42,376 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:42,376 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:42,376 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:42,376 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:48,817 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:48,817 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:48,817 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:48,916 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:04:54,880 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:04:54,881 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:04:54,881 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:04:54,881 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:05:02,396 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:05:02,397 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:05:02,397 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:05:02,397 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:05:08,187 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:05:08,187 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:05:08,187 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:05:08,188 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 10:05:12,995 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-71.70000000000005
+lastOrderPrice=-1.0,closePrice=1378.3,stepGrid=7.142857142857143,priceDeff=-1
+2022-09-27 10:05:12,996 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 10:05:12,996 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 10:05:12,996 - fishTrade_main20220913.py[line:289] - INFO: 无操作

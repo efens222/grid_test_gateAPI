@@ -94,8 +94,8 @@ class ClassET:
         """
 
         # 设定EA监控交易对
-        self.base_cur = base_cur
-        self.quote_cur = quote_cur
+        self.base_cur = base_cur.upper()
+        self.quote_cur = quote_cur.upper()
 #        self.mid_cur = mid_cur   # 中间货币，usdt或者btc
 #
 #        self.base_quote_slippage = 0.002  # 设定市场价滑点百分比
@@ -236,7 +236,7 @@ class ClassET:
                     self.doAction=1
 
                     buylots=self.pos_first_lots*self.pos_rate_list[0]
-                    buylots=pf.downRound(buylots,digits)
+                    buylots=upf.downRound(buylots,digits)
                     market_buy_size =buylots         # self.get_market_buy_size(huobi_market)
                     market_buy_size = upf.downRound(market_buy_size, digits)
                     if market_buy_size >= self.min_trade_unit:
@@ -281,8 +281,8 @@ class ClassET:
                         .format(self.buyCmd,self.sellCmd,self.doAction,diretion,lastOrderPrice,closePrice,self.stepGrid,cmd)
                 logger.info(outStr)
                 print(outStr)
-                self.print_log(self.logstr1)
-                self.print_log(self.logstr2)
+                # self.print_log(self.logstr1)
+                # self.print_log(self.logstr2)
                 self.sellCmd=False
                 self.buyCmd==False
                 if self.doAction==0:
@@ -358,7 +358,7 @@ class ClassET:
     def buy_enter(self, huobi_market, market_buy_size):
         logger.info("多单开仓 size:{0}".format(market_buy_size))
         # return
-        order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+        order_result = huobi_market.open_long_market(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
         logger.info("买入结果：{0}".format(order_result))
         time.sleep(2)
         if not huobi_market.order_normal(order_result,cur_market_name=self.get_market_name(self.quote_cur,self.base_cur)):
@@ -460,7 +460,7 @@ class ClassET:
                 # 对未成交的进行市价交易
                 buy_amount = self.market_price_tick["{0}".format(cur_pair)].get("asks")[4][0] \
                              * (buy_size - close_amount)  # 市价的amount按5档最差情况预估
-                buy_amount = max(HUOBI_BTC_MIN_ORDER_CASH, buy_amount)
+                # buy_amount = max(HUOBI_BTC_MIN_ORDER_CASH, buy_amount)
                 market_order_result = huobi_market.buy_market(cur_market_name=cur_pair, amount=downRound(buy_amount, 2))
                 logger.info(market_order_result)
         except:

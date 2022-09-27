@@ -1,0 +1,378 @@
+2022-09-27 11:48:08,498 - fishTrade_main20220913.py[line:559] - INFO: 
+                  ET网格智能交易系统3.0             
+*************************版权声明***************************             
+********************All Rights Reserved*********************             
+软件开发：海易，需求订制联系微信：yyy99966             
+优惠版：有效期30天，每分享一个好友，延长30天，10个延长一年
+
+2022-09-27 11:48:08,517 - fishTrade_main20220913.py[line:142] - INFO: 初始参数设置:symbol=ETH_USDT highPrice=1700.0 lowPrice=1200.0  step_num=70.0
+2022-09-27 11:48:11,778 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:48:11,780 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:48:13,780 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:48:16,692 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.2999999999999545
+lastOrderPrice=1387.5,closePrice=1387.8,stepGrid=7.142857142857143,priceDeff=-6.842857142857189
+2022-09-27 11:48:16,692 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:16,692 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:16,692 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:21,856 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.150000000000091
+lastOrderPrice=1387.5,closePrice=1386.35,stepGrid=7.142857142857143,priceDeff=-5.992857142857052
+2022-09-27 11:48:21,856 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:21,856 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:21,856 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:27,652 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-4.900000000000091
+lastOrderPrice=1387.5,closePrice=1382.6,stepGrid=7.142857142857143,priceDeff=-2.2428571428570523
+2022-09-27 11:48:27,652 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:27,652 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:27,653 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:32,592 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-6.2999999999999545
+lastOrderPrice=1387.5,closePrice=1381.2,stepGrid=7.142857142857143,priceDeff=-0.8428571428571887
+2022-09-27 11:48:32,592 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:32,593 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:32,593 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:37,644 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.5499999999999545
+lastOrderPrice=1387.5,closePrice=1383.95,stepGrid=7.142857142857143,priceDeff=-3.5928571428571887
+2022-09-27 11:48:37,645 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:37,645 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:37,645 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:42,393 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-2.5499999999999545
+lastOrderPrice=1387.5,closePrice=1384.95,stepGrid=7.142857142857143,priceDeff=-4.592857142857189
+2022-09-27 11:48:42,393 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:42,411 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:42,412 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:50,466 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-6.2999999999999545
+lastOrderPrice=1387.5,closePrice=1381.2,stepGrid=7.142857142857143,priceDeff=-0.8428571428571887
+2022-09-27 11:48:50,466 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:50,466 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:50,466 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:48:55,583 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.5499999999999545
+lastOrderPrice=1387.5,closePrice=1383.95,stepGrid=7.142857142857143,priceDeff=-3.5928571428571887
+2022-09-27 11:48:55,583 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:48:55,583 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:48:55,583 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:00,879 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-6.2999999999999545
+lastOrderPrice=1387.5,closePrice=1381.2,stepGrid=7.142857142857143,priceDeff=-0.8428571428571887
+2022-09-27 11:49:00,880 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:00,880 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:00,880 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:06,005 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.2999999999999545
+lastOrderPrice=1387.5,closePrice=1386.2,stepGrid=7.142857142857143,priceDeff=-5.842857142857189
+2022-09-27 11:49:06,006 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:06,006 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:06,006 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:10,748 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:49:10,748 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:49:12,749 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:49:16,248 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.2999999999999545
+lastOrderPrice=1387.5,closePrice=1386.2,stepGrid=7.142857142857143,priceDeff=-5.842857142857189
+2022-09-27 11:49:16,248 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:16,249 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:16,249 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:21,212 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:49:21,213 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:49:23,213 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:49:26,325 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.650000000000091
+lastOrderPrice=1387.5,closePrice=1385.85,stepGrid=7.142857142857143,priceDeff=-5.492857142857052
+2022-09-27 11:49:26,325 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:26,326 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:26,326 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:31,433 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:49:31,433 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:49:33,434 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:49:36,316 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.4500000000000455
+lastOrderPrice=1387.5,closePrice=1384.05,stepGrid=7.142857142857143,priceDeff=-3.6928571428570978
+2022-09-27 11:49:36,316 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:36,317 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:36,317 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:41,534 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.25
+lastOrderPrice=1387.5,closePrice=1387.75,stepGrid=7.142857142857143,priceDeff=-6.892857142857143
+2022-09-27 11:49:41,534 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:41,535 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:41,535 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:46,238 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.4500000000000455
+lastOrderPrice=1387.5,closePrice=1384.05,stepGrid=7.142857142857143,priceDeff=-3.6928571428570978
+2022-09-27 11:49:46,238 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:46,238 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:46,238 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:49:51,060 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:49:51,061 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:49:53,061 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:49:56,083 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.4500000000000455
+lastOrderPrice=1387.5,closePrice=1384.05,stepGrid=7.142857142857143,priceDeff=-3.6928571428570978
+2022-09-27 11:49:56,083 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:49:56,083 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:49:56,083 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:01,189 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:50:01,190 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:50:03,190 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:50:06,276 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:50:06,277 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:50:08,277 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:50:11,664 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:50:11,665 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:50:13,665 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:50:17,685 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-4.9500000000000455
+lastOrderPrice=1387.5,closePrice=1382.55,stepGrid=7.142857142857143,priceDeff=-2.1928571428570978
+2022-09-27 11:50:17,685 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:17,685 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:17,685 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:22,490 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-2.400000000000091
+lastOrderPrice=1387.5,closePrice=1385.1,stepGrid=7.142857142857143,priceDeff=-4.742857142857052
+2022-09-27 11:50:22,490 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:22,490 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:22,490 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:27,389 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-0.15000000000009095
+lastOrderPrice=1387.5,closePrice=1387.35,stepGrid=7.142857142857143,priceDeff=-6.992857142857052
+2022-09-27 11:50:27,389 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:27,389 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:27,389 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:33,105 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.0
+lastOrderPrice=1387.5,closePrice=1387.5,stepGrid=7.142857142857143,priceDeff=-7.142857142857143
+2022-09-27 11:50:33,106 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:33,106 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:33,106 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:38,364 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-5.150000000000091
+lastOrderPrice=1387.5,closePrice=1382.35,stepGrid=7.142857142857143,priceDeff=-1.9928571428570523
+2022-09-27 11:50:38,364 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:38,365 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:38,365 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:44,519 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-0.650000000000091
+lastOrderPrice=1387.5,closePrice=1386.85,stepGrid=7.142857142857143,priceDeff=-6.492857142857052
+2022-09-27 11:50:44,520 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:44,520 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:44,520 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:50:49,721 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:50:49,722 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:50:51,722 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:50:55,231 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-0.15000000000009095
+lastOrderPrice=1387.5,closePrice=1387.35,stepGrid=7.142857142857143,priceDeff=-6.992857142857052
+2022-09-27 11:50:55,231 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:50:55,231 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:50:55,231 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:00,232 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-0.15000000000009095
+lastOrderPrice=1387.5,closePrice=1387.35,stepGrid=7.142857142857143,priceDeff=-6.992857142857052
+2022-09-27 11:51:00,232 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:00,232 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:00,232 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:06,001 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:51:06,002 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:51:08,004 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:51:10,754 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:51:10,754 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:51:12,754 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:51:18,606 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-4.099999999999909
+lastOrderPrice=1387.5,closePrice=1383.4,stepGrid=7.142857142857143,priceDeff=-3.042857142857234
+2022-09-27 11:51:18,607 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:18,607 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:18,607 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:23,442 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.900000000000091
+lastOrderPrice=1387.5,closePrice=1388.4,stepGrid=7.142857142857143,priceDeff=-6.242857142857052
+2022-09-27 11:51:23,442 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:23,442 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:23,442 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:29,260 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.40000000000009095
+lastOrderPrice=1387.5,closePrice=1387.9,stepGrid=7.142857142857143,priceDeff=-6.742857142857052
+2022-09-27 11:51:29,261 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:29,262 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:29,262 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:34,070 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.900000000000091
+lastOrderPrice=1387.5,closePrice=1388.4,stepGrid=7.142857142857143,priceDeff=-6.242857142857052
+2022-09-27 11:51:34,070 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:34,070 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:34,071 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:40,082 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-5.849999999999909
+lastOrderPrice=1387.5,closePrice=1381.65,stepGrid=7.142857142857143,priceDeff=-1.2928571428572342
+2022-09-27 11:51:40,082 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:40,082 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:40,082 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:45,203 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-5.849999999999909
+lastOrderPrice=1387.5,closePrice=1381.65,stepGrid=7.142857142857143,priceDeff=-1.2928571428572342
+2022-09-27 11:51:45,203 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:45,204 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:45,204 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:50,322 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:0.900000000000091
+lastOrderPrice=1387.5,closePrice=1388.4,stepGrid=7.142857142857143,priceDeff=-6.242857142857052
+2022-09-27 11:51:50,322 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:50,322 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:50,323 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:51:55,119 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-2.7999999999999545
+lastOrderPrice=1387.5,closePrice=1384.7,stepGrid=7.142857142857143,priceDeff=-4.342857142857189
+2022-09-27 11:51:55,119 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:51:55,119 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:51:55,119 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:00,504 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-5.5499999999999545
+lastOrderPrice=1387.5,closePrice=1381.95,stepGrid=7.142857142857143,priceDeff=-1.5928571428571887
+2022-09-27 11:52:00,504 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:00,505 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:00,505 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:06,123 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-6.75
+lastOrderPrice=1387.5,closePrice=1380.75,stepGrid=7.142857142857143,priceDeff=-0.39285714285714324
+2022-09-27 11:52:06,123 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:06,124 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:06,124 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:11,029 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:52:11,030 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:52:13,031 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:52:15,801 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-2.7999999999999545
+lastOrderPrice=1387.5,closePrice=1384.7,stepGrid=7.142857142857143,priceDeff=-4.342857142857189
+2022-09-27 11:52:15,802 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:15,802 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:15,802 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:20,866 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:52:20,867 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:52:22,867 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:52:25,622 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-5.5499999999999545
+lastOrderPrice=1387.5,closePrice=1381.95,stepGrid=7.142857142857143,priceDeff=-1.5928571428571887
+2022-09-27 11:52:25,623 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:25,623 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:25,623 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:33,339 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-0.34999999999990905
+lastOrderPrice=1387.5,closePrice=1387.15,stepGrid=7.142857142857143,priceDeff=-6.792857142857234
+2022-09-27 11:52:33,339 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:33,339 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:33,339 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:38,239 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.0499999999999545
+lastOrderPrice=1387.5,closePrice=1386.45,stepGrid=7.142857142857143,priceDeff=-6.092857142857189
+2022-09-27 11:52:38,239 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:38,239 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:38,239 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:43,270 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.7999999999999545
+lastOrderPrice=1387.5,closePrice=1385.7,stepGrid=7.142857142857143,priceDeff=-5.342857142857189
+2022-09-27 11:52:43,271 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:43,271 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:43,271 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:48,879 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-2.599999999999909
+lastOrderPrice=1387.5,closePrice=1384.9,stepGrid=7.142857142857143,priceDeff=-4.542857142857234
+2022-09-27 11:52:48,879 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:48,879 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:48,879 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:53,954 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-3.599999999999909
+lastOrderPrice=1387.5,closePrice=1383.9,stepGrid=7.142857142857143,priceDeff=-3.542857142857234
+2022-09-27 11:52:53,955 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:53,955 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:53,955 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:52:59,674 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-6.349999999999909
+lastOrderPrice=1387.5,closePrice=1381.15,stepGrid=7.142857142857143,priceDeff=-0.7928571428572342
+2022-09-27 11:52:59,675 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:52:59,675 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:52:59,675 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:53:04,649 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.349999999999909
+lastOrderPrice=1387.5,closePrice=1386.15,stepGrid=7.142857142857143,priceDeff=-5.792857142857234
+2022-09-27 11:53:04,650 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:53:04,650 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:53:04,650 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:53:10,349 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.349999999999909
+lastOrderPrice=1387.5,closePrice=1386.15,stepGrid=7.142857142857143,priceDeff=-5.792857142857234
+2022-09-27 11:53:10,350 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:53:10,350 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:53:10,350 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:53:15,451 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.349999999999909
+lastOrderPrice=1387.5,closePrice=1386.15,stepGrid=7.142857142857143,priceDeff=-5.792857142857234
+2022-09-27 11:53:15,451 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:53:15,621 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:53:15,621 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:53:20,448 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:-1.0499999999999545
+lastOrderPrice=1387.5,closePrice=1386.45,stepGrid=7.142857142857143,priceDeff=-6.092857142857189
+2022-09-27 11:53:20,448 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:53:20,449 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:53:20,449 - fishTrade_main20220913.py[line:289] - INFO: 无操作
+2022-09-27 11:53:25,216 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:53:25,217 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:53:27,222 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:53:30,008 - fishTrade_main20220913.py[line:359] - INFO: 多单开仓 size:0.1
+2022-09-27 11:53:30,008 - fishTrade_main20220913.py[line:293] - ERROR: Traceback (most recent call last):
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 244, in strategy
+    res=self.buy_enter(huobi_market, market_buy_size)
+  File "E:/test_gateAPI/fishTrade_main20220913.py", line 361, in buy_enter
+    order_result = huobi_market.buy(cur_market_name=self.get_market_name(self.quote_cur,self.base_cur),price=self.market_price_tick["{0}_{1}".format(self.quote_cur,self.base_cur)].get("asks")[0][0], amount=market_buy_size)
+AttributeError: 'Market' object has no attribute 'buy'
+
+2022-09-27 11:53:32,008 - fishTrade_main20220913.py[line:612] - ERROR: 'Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')
+2022-09-27 11:53:34,703 - fishTrade_main20220913.py[line:282] - INFO: 买入区：True,卖出区:False, 动作:0, 方向:5.900000000000091
+lastOrderPrice=1387.5,closePrice=1393.4,stepGrid=7.142857142857143,priceDeff=-1.2428571428570523
+2022-09-27 11:53:34,703 - fishTrade_main20220913.py[line:544] - INFO: str1
+2022-09-27 11:53:34,704 - fishTrade_main20220913.py[line:544] - INFO: str2
+2022-09-27 11:53:34,704 - fishTrade_main20220913.py[line:289] - INFO: 无操作
